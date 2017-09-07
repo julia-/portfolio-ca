@@ -3,77 +3,78 @@ html(lang='en')
   head
     include includes/head.pug
   body
-    include includes/header.pug
-    main
-      section.about-container
-        h2 About
-        p I am a developer. I love working in front-end development but also get a kick out of back-end development.
-        p I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!
-        p I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.
-        p Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.
-        p When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando, and listening to music and podcasts, and going to gigs and exhibitions.
-        h3 Likes
-        ul.likes-list
-          li Caravaggio
-          li Dostoyevsky
-          li Punk
-          li Railways
-          li Maron
-          li Roxane Gay
-          li Gilmore Girls
-          li Mantzoukas
-      section.work-container
-        h2 Work
-        img(src="", alt="", srcset="")
-        img(src="", alt="", srcset="")
-        img(src="", alt="", srcset="")
-        img(src="", alt="", srcset="")
-        img(src="", alt="", srcset="")
-        img(src="", alt="", srcset="")
-      section.skill-container
-        h2 Experience and skills
-        h3 Experience
-        dl
-          dt Project officer, Online Services
-          dd State Library of NSW
-          dd August 2011–March 2017
-          dt Electronic Resources Manager
-          dd EBSCO Information Services
-          dd August 2008–August 2011
-        h3 Education
-        dl
-          dt Diploma of Information Technology
-          dd Coder Academy
-          dd August 2017–March 2018
-          dt Web Development Immersive
-          dd General Assembly
-          dd January 2015–April 2015
-          dt Front-End Web Development
-          dd General Assembly
-          dd January 2014–March 2014
-          dt Usability in Practice 3 Day Camp
-          dd Nielsen Norman Group
-          dd July 2012
-        h3 Skills
-        ul
-          li  HTML
-          li CSS
-          li Ruby
-          li Ruby on Rails
-          li JavaScript
-          li Pug
-          li Stylus
-          li Grunt
-          li PostgreSQL
-          li Git
-        button Download CV
-      section.contact-container
-        h2 Contact
-        form(action="")
-          label(for="name")
-          input(type="text" name="name", require)
-          label(for="email")
-          input(type="email", name="email", require)
-          textarea(name="message", cols="30", rows="10", require)
-          button(type="submit") Send
-    include includes/footer.pug
+    .flex-container
+      include includes/header.pug
+      main
+        section.about-container
+          h2 About
+          p I am a developer. I love working in front-end development but also get a kick out of back-end development.
+          p I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!
+          p I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.
+          p Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.
+          p When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando, and listening to music and podcasts, and going to gigs and exhibitions.
+          h3 Likes
+          ul.likes-list
+            li Caravaggio
+            li Dostoyevsky
+            li Punk
+            li Railways
+            li Maron
+            li Roxane Gay
+            li Gilmore Girls
+            li Mantzoukas
+        section.work-container
+          h2 Work
+          img(src="", alt="", srcset="")
+          img(src="", alt="", srcset="")
+          img(src="", alt="", srcset="")
+          img(src="", alt="", srcset="")
+          img(src="", alt="", srcset="")
+          img(src="", alt="", srcset="")
+        section.skill-container
+          h2 Experience and skills
+          h3 Experience
+          dl
+            dt Project officer, Online Services
+            dd State Library of NSW
+            dd August 2011–March 2017
+            dt Electronic Resources Manager
+            dd EBSCO Information Services
+            dd August 2008–August 2011
+          h3 Education
+          dl
+            dt Diploma of Information Technology
+            dd Coder Academy
+            dd August 2017–March 2018
+            dt Web Development Immersive
+            dd General Assembly
+            dd January 2015–April 2015
+            dt Front-End Web Development
+            dd General Assembly
+            dd January 2014–March 2014
+            dt Usability in Practice 3 Day Camp
+            dd Nielsen Norman Group
+            dd July 2012
+          h3 Skills
+          ul
+            li  HTML
+            li CSS
+            li Ruby
+            li Ruby on Rails
+            li JavaScript
+            li Pug
+            li Stylus
+            li Grunt
+            li PostgreSQL
+            li Git
+          button Download CV
+        section.contact-container
+          h2 Contact
+          form(action="")
+            label(for="name")
+            input(type="text" name="name", require)
+            label(for="email")
+            input(type="email", name="email", require)
+            textarea(name="message", cols="30", rows="10", require)
+            button(type="submit") Send
+      include includes/footer.pug

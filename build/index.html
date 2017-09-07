@@ -28,110 +28,114 @@
     <script src="/js/picturefil.min.js" async></script>
   </head>
   <body>
-    <header>
-      <div class="burger-container"><span class="menu-text">Menu</span><span class="burger"> </span></div>
-      <nav class="nav-menu hidden"><a href="#">About</a><a href="#">Work</a><a href="#">Experience and skills</a><a href="#">Contact</a></nav>
-      <h1>Hi, my name is Julia Ryan.</h1>
-      <p>I’m a developer based in Melbourne.</p>
-      <p>Want to know more? <span class="arrow-down"></span></p>
-    </header>
-    <main>
-      <section class="about-container">
-        <h2>About</h2>
-        <p>I am a developer. I love working in front-end development but also get a kick out of back-end development.</p>
-        <p>I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!</p>
-        <p>I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.</p>
-        <p>Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.</p>
-        <p>When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando, and listening to music and podcasts, and going to gigs and exhibitions.</p>
-        <h3>Likes</h3>
-        <ul class="likes-list">
-          <li>Caravaggio</li>
-          <li>Dostoyevsky</li>
-          <li>Punk</li>
-          <li>Railways</li>
-          <li>Maron</li>
-          <li>Roxane Gay</li>
-          <li>Gilmore Girls</li>
-          <li>Mantzoukas</li>
-        </ul>
-      </section>
-      <section class="work-container">
-        <h2>Work</h2><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset="">
-      </section>
-      <section class="skill-container">
-        <h2>Experience and skills</h2>
-        <h3>Experience</h3>
-        <dl>
-          <dt>Project officer, Online Services</dt>
-          <dd>State Library of NSW</dd>
-          <dd>August 2011–March 2017</dd>
-          <dt>Electronic Resources Manager</dt>
-          <dd>EBSCO Information Services</dd>
-          <dd>August 2008–August 2011</dd>
-        </dl>
-        <h3>Education</h3>
-        <dl>
-          <dt>Diploma of Information Technology</dt>
-          <dd>Coder Academy</dd>
-          <dd>August 2017–March 2018</dd>
-          <dt>Web Development Immersive</dt>
-          <dd>General Assembly</dd>
-          <dd>January 2015–April 2015</dd>
-          <dt>Front-End Web Development</dt>
-          <dd>General Assembly</dd>
-          <dd>January 2014–March 2014</dd>
-          <dt>Usability in Practice 3 Day Camp</dt>
-          <dd>Nielsen Norman Group</dd>
-          <dd>July 2012</dd>
-        </dl>
-        <h3>Skills</h3>
-        <ul>
-          <li> HTML</li>
-          <li>CSS</li>
-          <li>Ruby</li>
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-          <li>Pug</li>
-          <li>Stylus</li>
-          <li>Grunt</li>
-          <li>PostgreSQL</li>
-          <li>Git</li>
-        </ul>
-        <button>Download CV</button>
-      </section>
-      <section class="contact-container">
-        <h2>Contact</h2>
-        <form action="">
-          <label for="name"></label>
-          <input type="text" name="name" require>
-          <label for="email"></label>
-          <input type="email" name="email" require>
-          <textarea name="message" cols="30" rows="10" require></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <section class="footer-menu-container">
-        <h2>Menu</h2>
-        <ul>
-          <li>About</li>
-          <li>Work</li>
-          <li>Experiences and skills</li>
-          <li>Contact</li>
-        </ul>
-      </section>
-      <section class="connect-container">
-        <h2>Connect</h2>
-        <ul>
-          <li>Github</li>
-          <li>LinkedIn</li>
-          <li>Twitter</li>
-        </ul>
-      </section>
-      <section>
-        <p>Made with <span class="heart"></span> by Julia Ryan</p>
-      </section>
-    </footer>
+    <div class="flex-container">
+      <header>
+        <div class="burger-container"><span class="menu-text">Menu</span><span class="burger"> </span></div>
+        <nav class="nav-menu hidden"><a href="#">About</a><a href="#">Work</a><a href="#">Experience and skills</a><a href="#">Contact</a></nav>
+        <section class="heading-container">
+          <h1>Hi, my name is Julia Ryan.</h1>
+          <p>I’m a developer based in Melbourne.</p>
+          <p>Want to know more? </p><span class="arrow-down"></span>
+        </section>
+      </header>
+      <main>
+        <section class="about-container">
+          <h2>About</h2>
+          <p>I am a developer. I love working in front-end development but also get a kick out of back-end development.</p>
+          <p>I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!</p>
+          <p>I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.</p>
+          <p>Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.</p>
+          <p>When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando, and listening to music and podcasts, and going to gigs and exhibitions.</p>
+          <h3>Likes</h3>
+          <ul class="likes-list">
+            <li>Caravaggio</li>
+            <li>Dostoyevsky</li>
+            <li>Punk</li>
+            <li>Railways</li>
+            <li>Maron</li>
+            <li>Roxane Gay</li>
+            <li>Gilmore Girls</li>
+            <li>Mantzoukas</li>
+          </ul>
+        </section>
+        <section class="work-container">
+          <h2>Work</h2><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset=""><img src="" alt="" srcset="">
+        </section>
+        <section class="skill-container">
+          <h2>Experience and skills</h2>
+          <h3>Experience</h3>
+          <dl>
+            <dt>Project officer, Online Services</dt>
+            <dd>State Library of NSW</dd>
+            <dd>August 2011–March 2017</dd>
+            <dt>Electronic Resources Manager</dt>
+            <dd>EBSCO Information Services</dd>
+            <dd>August 2008–August 2011</dd>
+          </dl>
+          <h3>Education</h3>
+          <dl>
+            <dt>Diploma of Information Technology</dt>
+            <dd>Coder Academy</dd>
+            <dd>August 2017–March 2018</dd>
+            <dt>Web Development Immersive</dt>
+            <dd>General Assembly</dd>
+            <dd>January 2015–April 2015</dd>
+            <dt>Front-End Web Development</dt>
+            <dd>General Assembly</dd>
+            <dd>January 2014–March 2014</dd>
+            <dt>Usability in Practice 3 Day Camp</dt>
+            <dd>Nielsen Norman Group</dd>
+            <dd>July 2012</dd>
+          </dl>
+          <h3>Skills</h3>
+          <ul>
+            <li> HTML</li>
+            <li>CSS</li>
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>Pug</li>
+            <li>Stylus</li>
+            <li>Grunt</li>
+            <li>PostgreSQL</li>
+            <li>Git</li>
+          </ul>
+          <button>Download CV</button>
+        </section>
+        <section class="contact-container">
+          <h2>Contact</h2>
+          <form action="">
+            <label for="name"></label>
+            <input type="text" name="name" require>
+            <label for="email"></label>
+            <input type="email" name="email" require>
+            <textarea name="message" cols="30" rows="10" require></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <section class="footer-menu-container">
+          <h2>Menu</h2>
+          <ul>
+            <li>About</li>
+            <li>Work</li>
+            <li>Experiences and skills</li>
+            <li>Contact</li>
+          </ul>
+        </section>
+        <section class="connect-container">
+          <h2>Connect</h2>
+          <ul>
+            <li>Github</li>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+          </ul>
+        </section>
+        <section>
+          <p>Made with <span class="heart"></span> by Julia Ryan</p>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
