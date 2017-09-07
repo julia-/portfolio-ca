@@ -55,9 +55,9 @@ module.exports = function (grunt) {
       options: {
         livereload: true
       },
-      stylesheets: {
+      stylus: {
         files: 'src/**/*.styl',
-        tasks: ['stylesheets']
+        tasks: ['stylus']
       },
       pug: {
         files: 'src/**/*.pug',
