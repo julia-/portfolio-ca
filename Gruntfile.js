@@ -53,7 +53,7 @@ module.exports = function (grunt) {
     },
     watch: {
       options: {
-        livereload: true
+        reload: true
       },
       stylus: {
         files: 'src/**/*.styl',
