@@ -78,12 +78,6 @@ li > a
     font-size 1em
     padding-top 3.750em
 
-main p
-  font-family 'Montserrat', sans-serif
-  font-weight 300
-  line-height 115%
-  padding-bottom 1em
-
 .arrow-down
   position relative
   left 240px
@@ -112,9 +106,17 @@ main
 main > section
   min-height 100vh
   border-bottom 0.938em solid secondaryColor 
-  padding 2.188em 1.250em
+  // padding 2.188em 1.250em
+  padding 4.063em 1.250em
   &:nth-child(last)
     border-bottom none
+
+main p
+  font-family 'Montserrat', sans-serif
+  font-weight 300
+  font-size 1em
+  line-height 1.5em
+  padding-bottom 1em
 
 h2
 h3
@@ -133,15 +135,40 @@ h2
     height 1px
     width 10%
 
-p.introduction
+h3
+  font-size 1.875em
+  position relative
+  padding-bottom 0.2em
+  margin-top 0.75em
+  &:before
+    content ''
+    border-bottom 5px solid secondaryColor
+    position absolute
+    left 0
+    bottom 0
+    height 1px
+    width 10%
+
+.intro-paragraph
   font-family 'Big John'
   font-size 1.125em
-  margin 1.563em 0
+  line-height 1em
+  margin 1.111em 0
   padding 0
 
 ul
   list-style none
   padding 1em 0
+
+.likes-list
+  margin-left 1em
+  list-style square inside
+
+li
+  font-family 'Montserrat', sans-serif;
+  font-weight 300
+  font-size 1em
+  line-height 1.5em
 
 input[type="text"]
 input[type="email"]
@@ -164,10 +191,7 @@ footer
   height auto
   padding 4.063em 1.250em 1.563em 1.250em
   li
-    font-family 'Montserra'
-    font-weight 300
     font-size 1.25em
-    line-height 1.5em
   p
     // font-family 'Montserra'
     // font-weight 300
