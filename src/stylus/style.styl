@@ -58,6 +58,7 @@ header
     top 0.2em
 
 nav > a
+li > a
   color primaryColor
   text-decoration none
   display block
@@ -76,7 +77,7 @@ nav > a
   p:nth-child(3)
     font-size 1em
     padding-top 3.750em
-  
+
 main p
   font-family 'Montserrat', sans-serif
   font-weight 300
@@ -151,6 +152,85 @@ input[type="email"]
   margin-bottom 26px
   padding-bottom 4px
   outline none
+
+footer
+  display flex
+  flex-direction column
+  justify-content space-between
+  background secondaryColor
+  border 0.938em solid primaryColor
+  color primaryColor
+  min-height 50vh
+  height auto
+  padding 4.063em 1.250em 1.563em 1.250em
+  li
+    font-family 'Montserra'
+    font-weight 300
+    font-size 1.25em
+    line-height 1.5em
+  p
+    // font-family 'Montserra'
+    // font-weight 300
+    font-family 'Big John'
+    font-size 0.8em
+
+footer h2
+  font-size 2.125em
+  position relative
+  padding-bottom 0.1em
+  &:before
+    content ''
+    border-bottom 0.2em solid primaryColor
+    position absolute
+    left 1px
+    bottom 0
+    height 1em
+    width 1em
+
+.footer-menu-container
+  order 2
+
+.connect-container
+  order 1
+  margin-bottom 1.875em
+
+.author-container
+  order 3
+  margin 0.9375em auto 1.563em auto
+
+.heart
+  display inline-block
+  position relative
+  background primaryColor
+  top 0
+  width 0.75em
+  height 0.75em
+  transform rotate(45deg)
+  margin 0 0.5em
+  animation heartbeat 1.2s ease infinite
+  &::before
+  &::after
+    content ''
+    background primaryColor
+    width 0.75em
+    height 0.75em
+    position absolute
+    border-radius 50%
+  &::before
+    top -5px
+    left 0
+  &::after
+    top 0
+    left -5px
+
+@keyframes heartbeat
+  0%
+    transform rotate(45deg) scale(1)
+  50%
+    transform rotate(45deg) scale(1.2)
+  100%
+    transform rotate(45deg) scale(1)
+
 
 @media (min-width: 375px)
   header
