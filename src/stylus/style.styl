@@ -112,11 +112,23 @@ main > section
     border-bottom none
 
 main p
+  padding-bottom 1em
+
+main p
+dd
   font-family 'Montserrat', sans-serif
+  line-height 1.5em
   font-weight 300
   font-size 1em
-  line-height 1.5em
-  padding-bottom 1em
+
+dt
+  font-family 'Big John'
+  padding-top 1em
+
+dl
+  margin 2em 0
+  dt:first-child
+    padding-top 0
 
 h2
 h3
@@ -136,7 +148,7 @@ h2
     width 10%
 
 h3
-  font-size 1.875em
+  font-size 1.750em
   position relative
   padding-bottom 0.2em
   margin-top 0.75em
@@ -156,14 +168,6 @@ h3
   margin 1.111em 0
   padding 0
 
-ul
-  list-style none
-  padding 1em 0
-
-.likes-list
-  margin-left 1em
-  list-style square inside
-
 .image-grid
   display flex
   flex-direction column
@@ -177,11 +181,32 @@ ul
   border 0.25em solid secondaryColor
   margin 0.25em 0
 
+ul
+  list-style none
+  padding 1em 0
+
+.likes-list
+.skills-list
+  margin-left 1em
+  list-style square inside
+
 li
   font-family 'Montserrat', sans-serif;
   font-weight 300
   font-size 1em
   line-height 1.5em
+
+button
+  display block
+  background primaryColor
+  border 0.25em solid secondaryColor
+  width 12em
+  height 2.5em
+  margin 2.5em auto 0 auto
+  padding-top 1em
+  padding-bottom 2em
+  font-family 'Big John'
+  font-size 1.15em
 
 input[type="text"]
 input[type="email"]
