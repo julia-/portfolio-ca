@@ -8,7 +8,7 @@ html(lang='en')
       main
         section.about-container
           h2 About
-          p I am a developer. I love working in front-end development but also get a kick out of back-end development.
+          p.introduction I am a developer. I love working in front-end development but also get a kick out of back-end development.
           p I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!
           p I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.
           p Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.
@@ -72,9 +72,9 @@ html(lang='en')
           h2 Contact
           form(action="")
             label(for="name")
-            input(type="text" name="name", require)
+            input(type="text" name="name", placeholder="Name", require)
             label(for="email")
-            input(type="email", name="email", require)
+            input(type="email", name="email", placeholder="Email", require)
             textarea(name="message", cols="30", rows="10", require)
             button(type="submit") Send
       include includes/footer.pug

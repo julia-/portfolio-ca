@@ -24,24 +24,25 @@
     <meta property="og:site_name" content="Julia Ryan">
     <meta property="og:locale" content="en_AU">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <script>document.createElement("picture");</script>
     <script src="/js/picturefil.min.js" async></script>
   </head>
   <body>
     <div class="flex-container">
       <header>
-        <div class="burger-container"><span class="menu-text">Menu</span><span class="burger"> </span></div>
+        <div class="burger-container"><span class="menu-text">Menu</span><span class="burger"></span></div>
         <nav class="nav-menu hidden"><a href="#">About</a><a href="#">Work</a><a href="#">Experience and skills</a><a href="#">Contact</a></nav>
         <section class="heading-container">
           <h1>Hi, my name is Julia Ryan.</h1>
           <p>I’m a developer based in Melbourne.</p>
-          <p>Want to know more? </p><span class="arrow-down"></span>
+          <p>Want to know more?</p><span class="arrow-down"></span>
         </section>
       </header>
       <main>
         <section class="about-container">
           <h2>About</h2>
-          <p>I am a developer. I love working in front-end development but also get a kick out of back-end development.</p>
+          <p class="introduction">I am a developer. I love working in front-end development but also get a kick out of back-end development.</p>
           <p>I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!</p>
           <p>I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.</p>
           <p>Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.</p>
@@ -106,9 +107,9 @@
           <h2>Contact</h2>
           <form action="">
             <label for="name"></label>
-            <input type="text" name="name" require>
+            <input type="text" name="name" placeholder="Name" require>
             <label for="email"></label>
-            <input type="email" name="email" require>
+            <input type="email" name="email" placeholder="Email" require>
             <textarea name="message" cols="30" rows="10" require></textarea>
             <button type="submit">Send</button>
           </form>

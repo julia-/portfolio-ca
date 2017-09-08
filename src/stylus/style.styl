@@ -25,7 +25,7 @@ header
   color primaryColor
   width 100vw
   min-height 100vh
-  padding 2.188em 1.250em
+  padding 1.250em 1.250em 0 1.250em
 
 .burger-container
   display flex
@@ -49,7 +49,6 @@ header
     background primaryColor
     position absolute
     top -0.275em
-    // transform-origin 50% 50%
   &:after
     content ' '
     width 0.938em
@@ -57,7 +56,6 @@ header
     background primaryColor
     position absolute
     top 0.2em
-    // transform-origin 50% 50%
 
 nav > a
   color primaryColor
@@ -68,19 +66,27 @@ nav > a
   display none
 
 .heading-container
-  margin-top 3.125em
+  margin-top 2.813em
   h1
     font-size 2.250em
+    padding-bottom 0.556em
   p:nth-child(2)
     font-size 2.250em
-    padding 1em 0
+    padding-top 0.556em
   p:nth-child(3)
-    font-size 1em  
+    font-size 1em
+    padding-top 3.750em
+  
+main p
+  font-family 'Montserrat', sans-serif
+  font-weight 300
+  line-height 115%
+  padding-bottom 1em
 
 .arrow-down
   position relative
   left 240px
-  bottom -30px
+  bottom -15px
   width 0
   height 0
   border-left 10px solid transparent
@@ -89,7 +95,7 @@ nav > a
   &::before
     content ''
     width 0.375em
-    height 2.8em
+    height 2em
     background #e2bbe8
     position absolute
     bottom 20px
@@ -97,13 +103,54 @@ nav > a
 
 main
   background primaryColor
-  border 0.5em solid secondaryColor
+  border 0.938em solid secondaryColor
   color secondaryColor
-  border-top none
   width 100vw
+  // padding 2.188em 1.250em
 
 main > section
   min-height 100vh
+  border-bottom 0.938em solid secondaryColor 
+  padding 2.188em 1.250em
+  &:nth-child(last)
+    border-bottom none
+
+h2
+h3
+  font-family 'Big John'
+
+h2
+  font-size 2.125em
+  position relative
+  padding-bottom 0.2em
+  &:before
+    content ''
+    border-bottom 5px solid secondaryColor
+    position absolute
+    left 0
+    bottom 0
+    height 1px
+    width 10%
+
+p.introduction
+  font-family 'Big John'
+  font-size 1.125em
+  margin 1.563em 0
+  padding 0
+
+ul
+  list-style none
+  padding 1em 0
+
+input[type="text"]
+input[type="email"]
+  background transparent
+  border none
+  border-bottom: 0.25em solid secondaryColor
+  min-width 100%
+  margin-bottom 26px
+  padding-bottom 4px
+  outline none
 
 @media (min-width: 375px)
   header
