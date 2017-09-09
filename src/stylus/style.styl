@@ -189,12 +189,13 @@ dl
 
 h2
 h3
+  position relative
+  padding-bottom 0.5em
   font-family 'Big John'
 
 h2
   font-size 2.125em
-  position relative
-  padding-bottom 0.2em
+  margin-bottom 1em
   &:before
     content ''
     border-bottom 5px solid secondaryColor
@@ -205,10 +206,8 @@ h2
     width 10%
 
 h3
-  font-size 1.750em
-  position relative
-  padding-bottom 0.2em
-  margin-top 0.75em
+  font-size 1.5em
+  margin 0.25em auto 0.5em auto
   &:before
     content ''
     border-bottom 5px solid secondaryColor
@@ -225,13 +224,13 @@ h3
   margin 1.111em 0
   padding 0
 
-.image-grid
-  display flex
-  flex-direction column
-  justify-content space-between
-  margin-top 1.563em
+// .image-grid
+//   display flex
+//   flex-direction column
+//   justify-content space-between
+//   margin-top 1.563em
 
-.image-grid > img
+img
   max-width 100%
   height auto
   border 0.25em solid secondaryColor
