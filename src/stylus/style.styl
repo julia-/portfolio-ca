@@ -118,7 +118,7 @@ li > a
   text-decoration none
 
 li > a
-   color primaryColor
+  color primaryColor
 
 .hidden
   display none
@@ -136,7 +136,7 @@ li > a
     padding-top 3.750em
 
 .scroll-indicator
-    position relative
+  position relative
   .vertical-text
     display block
     position absolute
@@ -462,7 +462,7 @@ footer h2
   .fa-long-arrow-down
     right -0.5em
     bottom -2.15em
-  .main-container
+  main
     border 1.563em solid secondaryColor
   .main-container > section
     border-bottom 1.563em solid secondaryColor
@@ -473,6 +473,7 @@ footer h2
     font-size 4em
   .main-container p
   li
+  dt
   dd
     font-size 1.5em
   .image-grid
@@ -486,3 +487,55 @@ footer h2
     border 0.5em solid secondaryColor
   img:nth-child(odd)
     margin-right 0.25em
+
+@media (min-width: 1024px)
+  header
+    border 2.188em solid primaryColor
+    padding 7.25em 8.375em
+  .heading-container
+    h1
+    p:nth-child(2)
+      font-size 4.5em
+      padding-top 1.042em
+    p:nth-child(3)
+      font-size 3em
+      margin-top 3.25em
+  .vertical-text
+    right -2em
+    bottom -2.25em
+    font-size 1.5em
+  .fa-long-arrow-down
+    right -1em
+    bottom -2.5em
+  .menu-toggle
+    top 3.125em
+    right 1.5em
+    height 1em
+    padding-right 3em
+    font-size 2.25em
+  h2
+    font-size 4.250em
+    &::before
+      border-bottom 0.2em solid secondaryColor
+  h3
+    font-size 3.875em
+    &::before
+      border-bottom 0.2em solid secondaryColor
+  main
+    border 2.188em solid secondaryColor
+  .main-container > section
+    border-bottom 2.188em solid secondaryColor
+    padding 7.25em 8.375em
+  .main-container p
+  li
+  dt
+  dd
+    font-size 2em
+    line-height 125%
+  dl dt:first-child
+  dt
+    padding-top 1.5em
+  dl dd:last-child
+    padding-bottom 1.5em
+  button
+    font-size 2.5em
