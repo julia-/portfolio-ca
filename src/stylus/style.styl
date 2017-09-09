@@ -135,23 +135,20 @@ li > a
     font-size 1em
     padding-top 3.750em
 
-.arrow-down
-  position relative
-  left 240px
-  bottom -15px
-  width 0
-  height 0
-  border-left 10px solid transparent
-  border-right 10px solid transparent
-  border-top 10px solid primaryColor
-  &::before
-    content ''
-    width 0.375em
-    height 2em
-    background #e2bbe8
+.scroll-indicator
+    position relative
+  .vertical-text
+    display block
     position absolute
-    bottom 20px
-    left -3px
+    right -0.25em
+    bottom -3em
+    font-size 0.75em
+    writing-mode vertical-rl
+  .fa-long-arrow-down
+    position absolute
+    right -0.15em
+    bottom -1.85em
+    color primaryColor
 
 main
   background primaryColor
@@ -266,9 +263,13 @@ button
     background secondaryColor
     color primaryColor
 
+.contact-container
+  padding-bottom 0
+  min-height 95vh
+
 form
   position relative
-  margin 2.5em auto 0 auto
+  margin 2em auto 0 auto
   font-family 'Big John'
 
 input[type="text"]
@@ -285,6 +286,11 @@ input[type="email"]
   font-family 'Montserrat', sans-serif
   font-weight 300
   font-size 1em
+
+input::placeholder
+  font-family 'Big John'
+  font-size 1em
+  color secondaryColor
 
 input:-webkit-autofill
   -webkit-box-shadow 0 0 0 30px primaryColor inset
@@ -308,12 +314,14 @@ button[type="submit"]
   right 0
   background primaryColor
   border 0.2em solid secondaryColor
-  width 5.5em
+  width 6em
+  height 2em
   padding-top 0.75em
   padding-bottom 1.75em
-  cursor pointer
   font-family 'Big John'
   font-size 1.15em
+  cursor pointer
+  margin 0 auto
   border-radius 0
   appearance none
   &:hover
@@ -341,23 +349,13 @@ footer
   li
     font-size 1.25em
   p
-    // font-family 'Montserra'
-    // font-weight 300
     font-family 'Big John'
     font-size 0.8em
 
 footer h2
-  font-size 2.125em
-  position relative
-  padding-bottom 0.1em
+  margin-bottom 0
   &:before
-    content ''
     border-bottom 0.2em solid primaryColor
-    position absolute
-    left 1px
-    bottom 0
-    height 1em
-    width 1em
 
 .footer-menu-container
   order 2
@@ -368,7 +366,7 @@ footer h2
 
 .author-container
   order 3
-  margin 0.9375em auto 1.563em auto
+  margin 1.563em auto 0.5em auto
   text-align center
 
 .heart
@@ -457,20 +455,13 @@ footer h2
   .open
   .close
     right 3em
-  .scroll-indicator
-    position relative
   .vertical-text
-    display block
-    position absolute
     right -1.15em
     bottom -2.25em
     font-size 1.25em
-    writing-mode vertical-rl
   .fa-long-arrow-down
-    position absolute
     right -0.5em
     bottom -2.15em
-    color primaryColor
   .main-container
     border 1.563em solid secondaryColor
   .main-container > section

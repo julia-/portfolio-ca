@@ -26,15 +26,6 @@ html(lang='en')
             li Mantzoukas
         section.work-container
           include includes/work.pug
-          //- a(name="work")
-          //- h2 Work
-          //- .image-grid
-          //-   img(src="/img/historia-320.jpg", alt="", srcset="")
-          //-   img(src="/img/sparkr-320.jpg", alt="", srcset="")
-          //-   img(src="/img/i-was-there-320.jpg", alt="", srcset="")
-          //-   img(src="/img/ace-metalwork-320.jpg", alt="", srcset="")
-          //-   img(src="/img/ping-pong-320.jpg", alt="", srcset="")
-          //-   img(src="/img/band-website-320.jpg", alt="", srcset="")
         section.skill-container
           a(name="skills")
           h2 Experience and skills
@@ -80,9 +71,9 @@ html(lang='en')
             .hidden
               label(for="bot-field") Don’t fill out
               input(name="bot-field")
-            label(for="name") Name
+            label(for="name")
             input(type="text" name="name", placeholder="Name", require)
-            label(for="email") Email
+            label(for="email")
             input(type="email", name="email", placeholder="Email", require)
             label(for="message") Message
             textarea(name="message", cols="30", rows="6", require)
