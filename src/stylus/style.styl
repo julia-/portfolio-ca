@@ -18,6 +18,9 @@ secondaryColor = #222222
   display flex
   flex-direction column
 
+body.noscroll
+  overflow hidden
+
 header
   font-family 'Big John'
   background secondaryColor
@@ -25,43 +28,97 @@ header
   color primaryColor
   width 100vw
   min-height 100vh
-  padding 1.250em 1.250em 0 1.250em
+  padding 1.563em 1.250em 0 1.250em
 
-.burger-container
-  display flex
-  justify-content flex-end
-  margin-right 0.5em
+.menu-toggle
+  position absolute
+  top 2.25em
+  right 1.25em
+  text-align center
+  height .95em
+  cursor pointer
+  padding-right 3em
 
-.menu-text
+.open
+.close
+  position absolute
+  top 0
+  right 2.75em
+  font-family 'Big John'
+
+.open
+  color primaryColor
   cursor pointer
   user-select none
   padding-right 0.333em
 
-.burger
+.close
+  display none
+
+.close.active
+  display block
+  color secondaryColor
   cursor pointer
   user-select none
-  position relative
-  top 0.3em
-  &:before
-    content ' '
-    width 0.938em
-    height 0.3em
-    background primaryColor
-    position absolute
-    top -0.275em
-  &:after
-    content ' '
-    width 0.938em
-    height 0.3em
-    background primaryColor
-    position absolute
-    top 0.2em
+  padding-right 0.333em
 
-nav > a
-li > a
-  color primaryColor
-  text-decoration none
+.menu-toggle.active .open
+  display none
+
+.menu-toggle::before
+.menu-toggle::after
+  content ''
+  position absolute
+  width 1em
+  height 0.2em
+  right 1.25em
+  background primaryColor
+
+.menu-toggle::before
+  top 0em
+  transition .5s
+
+.menu-toggle::after
+  bottom 0.2em
+  transition .5s
+
+.menu-toggle.active::before
+  background secondaryColor
+  top 0.4em
+  transform rotate(45deg)
+
+.menu-toggle.active::after
+  background secondaryColor
+  bottom 0.4em
+  transform rotate(-45deg)
+
+.nav-menu
+  display none
+
+.nav-menu.active
   display block
+  height 100vh
+  background primaryColor
+  border 0.938em solid secondaryColor
+  padding 1.25em 1.25em 0 1.25em
+  overflow-y auto
+  h2
+    margin-top 1.184em
+  .nav-links
+    margin-top 1.875em
+  .nav-links > a
+    font-family 'Big John'
+    font-size 1.75em
+    color secondaryColor
+    padding-bottom 0.714em
+
+.nav-links > a
+li > a
+  display block
+  text-decoration none
+
+li > a
+   color primaryColor
 
 .hidden
   display none

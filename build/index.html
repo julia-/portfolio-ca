@@ -26,13 +26,18 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <script>document.createElement("picture");</script>
-    <script src="/js/picturefil.min.js" async></script>
+    <script src="/js/picturefill.min.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="/js/main.js" async></script>
   </head>
   <body>
     <div class="flex-container">
+      <div class="menu-toggle"><span class="open">Menu</span><span class="close">Close</span></div>
+      <nav class="nav-menu">
+        <h2>Menu</h2>
+        <div class="nav-links"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Experience and skills</a><a href="#contact">Contact</a></div>
+      </nav>
       <header>
-        <div class="burger-container"><span class="menu-text">Menu</span><span class="burger"></span></div>
-        <nav class="nav-menu hidden"><a href="#">About</a><a href="#">Work</a><a href="#">Experience and skills</a><a href="#">Contact</a></nav>
         <section class="heading-container">
           <h1>Hi, my name is Julia Ryan.</h1>
           <p>I’m a developer based in Melbourne.</p>
@@ -40,7 +45,7 @@
         </section>
       </header>
       <main>
-        <section class="about-container">
+        <section class="about-container"><a name="about"></a>
           <h2>About</h2>
           <p class="intro-paragraph">I am a developer. I love working in front-end development but also get a kick out of back-end development.</p>
           <p>I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!</p>
@@ -59,11 +64,11 @@
             <li>Mantzoukas</li>
           </ul>
         </section>
-        <section class="work-container">
+        <section class="work-container"><a name="work"></a>
           <h2>Work</h2>
           <div class="image-grid"><img src="/img/historia-320.jpg" alt="" srcset=""><img src="/img/sparkr-320.jpg" alt="" srcset=""><img src="/img/i-was-there-320.jpg" alt="" srcset=""><img src="/img/ace-metalwork-320.jpg" alt="" srcset=""><img src="/img/ping-pong-320.jpg" alt="" srcset=""><img src="/img/band-website-320.jpg" alt="" srcset=""></div>
         </section>
-        <section class="skill-container">
+        <section class="skill-container"><a name="skills"></a>
           <h2>Experience and skills</h2>
           <h3>Experience</h3>
           <dl>
@@ -104,7 +109,7 @@
           </ul>
           <button>Download CV</button>
         </section>
-        <section class="contact-container">
+        <section class="contact-container"><a name="contact"></a>
           <h2>Contact</h2>
           <form name="contact" action="thank-you" netlify>
             <label for="name">Name</label>
