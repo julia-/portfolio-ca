@@ -228,7 +228,6 @@ h3
 .image-grid
   display flex
   flex-direction column
-  // flex-wrap wrap
   justify-content space-between
   margin-top 1.563em
 
@@ -371,6 +370,7 @@ footer h2
 .author-container
   order 3
   margin 0.9375em auto 1.563em auto
+  text-align center
 
 .heart
   display inline-block
@@ -405,7 +405,7 @@ footer h2
   100%
     transform rotate(45deg) scale(1)
 
-
+// MEDIA QUERIES
 @media (min-width: 375px)
   header
     padding-left 2.3em
@@ -426,10 +426,73 @@ footer h2
   header
     border 1.563em solid primaryColor
     padding-top 3.75em
-    padding-left 3.438em
-    padding-right 3.438em
+    padding-left 4.250em
+    padding-right 4.250em
   .heading-container h1
     margin-top 1.563em
     font-size 4em
+    max-width 7em
   .heading-container p:nth-child(2)
     font-size 4em
+    padding-top 1em
+    padding-bottom 0
+  .heading-container p:nth-child(3)
+    font-size 2.5em
+    padding-top 0 
+    margin-top 2.5em
+  .menu-toggle
+    top 2.75em
+    right 1.25em
+    height 1em
+    padding-right 3.25em
+    font-size 1.75em
+  .menu-toggle::before
+  .menu-toggle::after
+    width 1.25em
+    height .3em
+    right 1.25em
+  .menu-toggle.active::before
+    top .35em
+  .menu-toggle.active::after
+    bottom .35em
+  .open
+  .close
+    right 3em
+  .scroll-indicator
+    position relative
+  .vertical-text
+    display block
+    position absolute
+    right -1.15em
+    bottom -2.25em
+    font-size 1.25em
+    writing-mode vertical-rl
+  .fa-long-arrow-down
+    position absolute
+    right -0.5em
+    bottom -2.15em
+    color primaryColor
+  .main-container
+    border 1.563em solid secondaryColor
+  .main-container > section
+    border-bottom 1.563em solid secondaryColor
+    padding-top 3.75em
+    padding-left 4.250em
+    padding-right 4.250em
+  h2
+    font-size 4em
+  .main-container p
+  li
+  dd
+    font-size 1.5em
+  .image-grid
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    margin-top 1.563em
+  .image-grid > img
+    max-width 49%
+    border 0.5em solid secondaryColor
+  img:nth-child(odd)
+    margin-right 0.25em
