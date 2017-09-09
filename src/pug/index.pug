@@ -72,10 +72,11 @@ html(lang='en')
         section.contact-container
           h2 Contact
           form(action="")
-            label(for="name")
+            label(for="name") Name
             input(type="text" name="name", placeholder="Name", require)
-            label(for="email")
+            label(for="email") Email
             input(type="email", name="email", placeholder="Email", require)
-            textarea(name="message", cols="30", rows="10", require)
+            label(for="message") Message
+            textarea(name="message", cols="30", rows="6", require)
             button(type="submit") Send
       include includes/footer.pug

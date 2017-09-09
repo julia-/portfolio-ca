@@ -102,14 +102,14 @@ main
   color secondaryColor
   width 100vw
   // padding 2.188em 1.250em
+  section:last-child
+    border-bottom none
 
 main > section
   min-height 100vh
   border-bottom 0.938em solid secondaryColor 
   // padding 2.188em 1.250em
   padding 4.063em 1.250em
-  &:nth-child(last)
-    border-bottom none
 
 main p
   padding-bottom 1em
@@ -207,16 +207,49 @@ button
   padding-bottom 2em
   font-family 'Big John'
   font-size 1.15em
+  &:hover
+    background secondaryColor
+    color primaryColor
+
+form
+  position relative
+  margin 2.5em auto 0 auto
+  font-family 'Big John'
 
 input[type="text"]
 input[type="email"]
   background transparent
   border none
-  border-bottom: 0.25em solid secondaryColor
+  border-bottom 0.35em solid secondaryColor
   min-width 100%
   margin-bottom 26px
   padding-bottom 4px
   outline none
+
+textarea
+  background primaryColor
+  border 0.25em solid secondaryColor
+  min-width 100%
+  font-family 'Montserrat', sans-serif
+  font-weight 300
+  font-size 1em
+  &:focus
+    outline none
+
+button[type="submit"]
+  position absolute
+  bottom -3.25em
+  right 0
+  background primaryColor
+  border 0.2em solid secondaryColor
+  width 5.5em
+  padding-top 0.75em
+  padding-bottom 1.75em
+  cursor pointer
+  font-family 'Big John'
+  font-size 1.15em
+  &:focus
+    outline none
 
 footer
   display flex
