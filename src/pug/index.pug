@@ -75,7 +75,10 @@ html(lang='en')
         section.contact-container
           a(name="contact")
           h2 Contact
-          form(name="contact" action="thank-you" netlify)
+          form(name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form")
+            .hidden
+              label(for="bot-field") Don’t fill out
+              input(name="bot-field")
             label(for="name") Name
             input(type="text" name="name", placeholder="Name", require)
             label(for="email") Email

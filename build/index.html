@@ -111,7 +111,11 @@
         </section>
         <section class="contact-container"><a name="contact"></a>
           <h2>Contact</h2>
-          <form name="contact" action="thank-you" netlify>
+          <form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form">
+            <div class="hidden">
+              <label for="bot-field">Don’t fill out</label>
+              <input name="bot-field">
+            </div>
             <label for="name">Name</label>
             <input type="text" name="name" placeholder="Name" require>
             <label for="email">Email</label>

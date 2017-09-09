@@ -284,6 +284,13 @@ input[type="email"]
   outline none
   border-radius 0
   appearance none
+  font-family 'Montserrat', sans-serif
+  font-weight 300
+  font-size 1em
+
+input:-webkit-autofill
+  -webkit-box-shadow 0 0 0 30px primaryColor inset
+  -webkit-text-fill-color secondaryColor !important
 
 textarea
   background primaryColor
@@ -311,6 +318,9 @@ button[type="submit"]
   font-size 1.15em
   border-radius 0
   appearance none
+  &:hover
+    background secondaryColor
+    color primaryColor
   &:focus
     outline none
 
