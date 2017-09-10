@@ -19,7 +19,7 @@ I was then able to start developing potential designs using mainly black/white a
 ![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ## Final design
-My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design that used a two to three colours and thick black lines. I was aiming to capture a sense of clarity and contrast, as well as bold, clean lines and I believe I achieved this through my font selection - the main font ([Big John](https://www.behance.net/gallery/19484739/big-john-slim-joe-free-font/)) is bold, geometric with sharp angles.
+My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. I was aiming to capture a sense of clarity and contrast, as well as bold, clean lines and I believe I achieved this especially through my font selection - the main font ([Big John](https://www.behance.net/gallery/19484739/big-john-slim-joe-free-font/)) is bold, geometric with sharp angles.
 
 My colour palette consists of French Lilac and Mine shaft. In choosing these colours, I was looking for either bright, neon colours or more muted, pastel colours to offset the starkness of the dark grey. I feel that the choice of French Lilac gives enough brightness and contrast, while also providing a dramatic effect.
 
