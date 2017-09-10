@@ -35,7 +35,7 @@ I selected a bold, geometric font with sharp angles. I wanted use typography as 
 [Figma | Desktop](https://www.figma.com/file/98uqAHDzHpsptFj6fotAG2/Portfolio-Desktop)
 
 ## Style guide
-
+[Style Guide](https://juliaryan.io/assets/doc/portfolio-styleguide.pdf)
 ## Usability
 I opted to using an hamburger style icon for the navigation menu but included the word 'menu' next to it for users to easily identify what the icon means. I plan to look at other possibly ways to not have the navigation hidden especially on mobile view.
 
