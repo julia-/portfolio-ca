@@ -13,17 +13,17 @@ I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect ill
 
 I was then able to start developing potential designs for my portfolio.
 
-![Concept v1](/relative/path/to/img.jpg?raw=true "Concept v1")
+[Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")
 
-![Concept v2](/relative/path/to/img.jpg?raw=true "Concept v2")
+![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")
 
-![Concept v3](/relative/path/to/img.jpg?raw=true "Concept v3")
+![Concept v3](/dest/assets/img/design-mockup-03.png?raw=true "Concept v3")
 
-![Concept v4](/relative/path/to/img.jpg?raw=true "Concept v4")
+![Concept v4](/dest/assets/img/design-mockup-04.png?raw=true "Concept v4")
 
-![Concept v5](/relative/path/to/img.jpg?raw=true "Concept v5")
+![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")
 
-![Concept v6](/relative/path/to/img.jpg?raw=true "Concept v6")
+![Concept v6](/dest/assets/img/design-mockup-05.png?raw=true "Concept v6")
 
 ### Design
 My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I am aiming to capture is a sense of clarity and contrast, as well as bold, clean lines. 
@@ -33,8 +33,6 @@ My colour palette consists of French Lilac and Mine shaft. In choosing these col
 I feel that the choice of French Lilac  gives enough brightness and contrast, while also providing a dramatic effect. From an accessibility perspective, this colour palette is also suitable for people with colour visibility problems.
 
 My font choice of Big John and Montserrat […]
-- General look
-- Logo
 
 ### Logo
 [Figma | Logo and Favicon](https://www.figma.com/file/5NCkU4WZgAZ4x7Jls6j6bv/Portfolio-Logo)
@@ -45,14 +43,10 @@ My font choice of Big John and Montserrat […]
 
 [Figma | Desktop](https://www.figma.com/file/98uqAHDzHpsptFj6fotAG2/Portfolio-Desktop)
 
-- Typography
-- Colour Scheme
-
 ## Style guide
 
 
 ## Development
-
 ### Tasks
 - [x] `git init`
 - [x] Create repo
@@ -70,11 +64,18 @@ My font choice of Big John and Montserrat […]
 - [ ] Single page app (react)
 
 
-I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [Grunt](https://gruntjs.com/) to compile the pug and styl files and to perform other tasks including generating responsive images. 
+I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [Grunt](https://gruntjs.com/) to compile the Pug and Stylus files and to perform other tasks including generating responsive images.
 
 ## Challenges and final thoughts
-- images
-- restrictive colour scheme
+### Images
+- Displaying images without taking away from design
 - image layout
+
+### Colour scheme
+- restrictive colour scheme
+
+### Navigation
 - single page app
+
+### Compatibility and display
 - breakpoints
