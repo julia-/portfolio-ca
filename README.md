@@ -4,7 +4,7 @@ Demonstrate to prospective employers and other developers my coding experience a
 
 ## Design & Planning
 
-My goal was to design and build a portfolio site that was striking and memorable but still simple and minimal in design. My design needed give content and function priority as I did not want the design to distract from the purpose of the site.
+My goal was to design and build a portfolio site that was striking, unique and memorable while still being simple and minimal in design. My design needed give content and function priority - the design needed to support and not distract from the purpose of the site. My ultimate goal was to surprise and provide a fun experience for the viewer without overwhelming them.
 
 Before developing a concept for my design, I explored portfolios from developers, designers and creative agencies to help decide which direction I wanted to take with the design. I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect illustrations, designs, colour swatches, and typography examples to gain inspiration.
 
@@ -17,9 +17,9 @@ I was then able to start developing potential designs using mainly black/white a
 ![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ## Final design
-The design that I chose was heavily inspired by minimalism, punk/new wave-influenced graphic design and sharp lines in architecture. I wanted to capture a sense of clarity and contrast, as well as bold, clean lines through typography and using strong, well defined colours.
+The design that I chose was heavily inspired by minimalism, punk/new wave-influenced graphic design and sharp lines in architecture. I wanted to capture a sense of clarity and contrast, as well as bold, clean lines through typography and using strong, well defined colours. I also draw inspiration for framing my website with thick borders from posters, books and artwork.
 
-I needed to pick a font that created statement. I selected [Big John](https://www.behance.net/gallery/19484739/big-john-slim-joe-free-font/) as my primary font for it's sharp, geometric, bold lines.
+I needed to pick a font that created statement. I selected [Big John](https://www.behance.net/gallery/19484739/big-john-slim-joe-free-font/) as my primary font for it's sharp, geometric and bold lines.
 
 My colour palette consists of French Lilac and Mine shaft. In choosing these colours, I was looking for either bright, neon colours or more muted, pastel colours to offset the starkness of the dark grey. I feel that the choice of French Lilac gives enough brightness and contrast, while also providing a dramatic effect.
 
