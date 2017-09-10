@@ -23,7 +23,7 @@ I was then able to start developing potential designs for my portfolio.
 
 ![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")
 
-![Concept v6](/dest/assets/img/design-mockup-05.png?raw=true "Concept v6")
+![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ### Design
 My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I am aiming to capture is a sense of clarity and contrast, as well as bold, clean lines. 
