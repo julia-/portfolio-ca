@@ -24,6 +24,14 @@ module.exports = function (grunt) {
           dest: 'build/fonts',
         }]
       },
+      logo: {
+        files: [{
+          expand: true,
+          cwd: 'src/img',
+          src: ['**/*.png'],
+          dest: 'build/img',
+        }]
+      },
       assets: {
         files: [{
           expand: true,
@@ -136,7 +144,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          src: ['**/*.{gif,jpg,png}'],
+          src: ['**/*.{gif,jpg}'],
           cwd: 'src/',
           dest: 'build/'
         }]
