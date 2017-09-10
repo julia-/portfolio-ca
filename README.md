@@ -76,6 +76,8 @@ This was one of the sore points with my design. The project screenshots included
 
 I would like to look at other possibilities for displaying the images as I feel the images are somewhat washed out which takes away from the impact from the project.
 
+Due to time constraints, I was unable to achieve the layout I had designed without impacting the layout for the site.
+
 ### Colour scheme
 #### Restrictive colour scheme
 
