@@ -4,11 +4,13 @@ Demonstrate to prospective employers and other developers my coding experience a
 
 ## Design & Planning
 
-My goal was to design and build a portfolio that was striking and was rememberable but still simple and minimal in design. I wanted to come up with a designed that showed my love for music and architecture through typography and colour.
+My goal was to design and build a portfolio that was striking and memorable but still simple and minimal in design so it wouldn't distract from the purpose of the portfolio
 
-Before defining a concept, I explored portfolios from developers, designers and creative agencies to help decide which direction I wanted to take with my design. I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect illustrations, designs, colour swatches, and typography examples to gain inspiration.
+I wanted to produce a design that showed my love for music and architecture through the use of typography and colour.
 
-I was then started to develop potential designs using mainly black/white as typography was going to be the hero in my design.
+Before defining a concept, I explored portfolios from developers, designers and creative agencies to help decide which direction I wanted to take with the design. I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect illustrations, designs, colour swatches, and typography examples to gain inspiration.
+
+I was then able to start developing potential designs using mainly black/white as typography was going to be the hero of the design.
 
 ![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")
 
@@ -17,13 +19,9 @@ I was then started to develop potential designs using mainly black/white as typo
 ![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ## Final design
-My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I was aiming to capture a sense of clarity and contrast, as well as bold, clean lines.
+My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design that used a two to three colours and thick black lines. I was aiming to capture a sense of clarity and contrast, as well as bold, clean lines and I believe I achieved this through my font selection - the main font ([Big John](https://www.behance.net/gallery/19484739/big-john-slim-joe-free-font/)) is bold, geometric with sharp angles.
 
-My colour palette consists of French Lilac and Mine shaft. In choosing these colours, I was looking for either bright, neon colours or more muted, pastel colours to offset the starkness of the dark grey.
-
-I feel that the choice of French Lilac gives enough brightness and contrast, while also providing a dramatic effect. From an accessibility perspective, this colour palette is also suitable for people with colour visibility problems.
-
-I selected a bold, geometric font with sharp angles. I wanted use typography as the main design element.
+My colour palette consists of French Lilac and Mine shaft. In choosing these colours, I was looking for either bright, neon colours or more muted, pastel colours to offset the starkness of the dark grey. I feel that the choice of French Lilac gives enough brightness and contrast, while also providing a dramatic effect.
 
 ### Logo
 [Figma | Logo and Favicon](https://www.figma.com/file/5NCkU4WZgAZ4x7Jls6j6bv/Portfolio-Logo)
