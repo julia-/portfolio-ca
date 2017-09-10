@@ -63,7 +63,7 @@ html(lang='en')
             li Grunt
             li PostgreSQL
             li Git
-          button Download CV
+          a.button(href="/assets/doc/cv-2017-09.pdf") Download CV
         section.contact-container
           a(name="contact")
           h2 Contact
@@ -76,7 +76,7 @@ html(lang='en')
             label(for="email")
             input(type="email", name="email", placeholder="Email", require)
             label(for="message") Message
-            textarea(name="message", cols="30", rows="6", require)
+            textarea(name="message", require)
             button(type="submit") Send
           //- div.success-notification Thank you! I'll be in touch shortly!
       include includes/footer.pug

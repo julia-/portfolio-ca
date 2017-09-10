@@ -133,7 +133,7 @@ li > a
     padding-top 0.556em
   p:nth-child(3)
     font-size 1em
-    padding-top 3.750em
+    padding-top 5em
 
   .heading-block
     display block
@@ -144,7 +144,7 @@ li > a
     display block
     position absolute
     right -0.25em
-    bottom -3em
+    bottom -4.75em
     font-size 0.75em
     writing-mode vertical-lr
   .fa-long-arrow-down
@@ -251,7 +251,8 @@ li
   font-size 1em
   line-height 1.5em
 
-button
+// button
+.button
   display block
   background primaryColor
   border 0.25em solid secondaryColor
@@ -262,6 +263,9 @@ button
   padding-bottom 2em
   font-family 'Big John'
   font-size 1.15em
+  color secondaryColor
+  text-align center
+  text-decoration none
   &:hover
     background secondaryColor
     color primaryColor
@@ -303,6 +307,7 @@ textarea
   background primaryColor
   border 0.25em solid secondaryColor
   min-width 100%
+  height 10em
   font-family 'Montserrat', sans-serif
   font-weight 300
   font-size 1em
@@ -540,7 +545,7 @@ footer h2
     padding-top 1.5em
   dl dd:last-child
     padding-bottom 1.5em
-  button
+  .button
     font-size 2.5em
 
 @media (min-width: 1200px)
@@ -607,8 +612,9 @@ footer h2
     max-width 100%
     border 0.75em solid secondaryColor
     margin-bottom 1em
-  button
-    font-size 1.5em
+  .button
+    font-size 1.25em
+    margin 2em auto
   dl dt:first-child
     padding-top 0
   dt
