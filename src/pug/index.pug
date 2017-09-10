@@ -72,11 +72,11 @@ html(lang='en')
               label(for="bot-field") Don’t fill out
               input(name="bot-field")
             label(for="name")
-            input(type="text" name="name", placeholder="Name", require)
+            input(type="text" id="name" name="name" placeholder="Name" require)
             label(for="email")
-            input(type="email", name="email", placeholder="Email", require)
+            input(type="email" id="email" name="email" placeholder="Email" require)
             label(for="message") Message
-            textarea(name="message", require)
+            textarea(name="message" id="message" require)
             button(type="submit") Send
           //- div.success-notification Thank you! I'll be in touch shortly!
       include includes/footer.pug
