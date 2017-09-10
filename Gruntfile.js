@@ -11,39 +11,55 @@ module.exports = function (grunt) {
       main: {
         files: [{
           expand: true,
-          cwd: 'src/js',
+          cwd: 'src/assets/js',
           src: ['**'],
-          dest: 'build/js',
+          dest: 'dest/assets/js',
         }]
       },
       fonts: {
         files: [{
           expand: true,
-          cwd: 'src/fonts',
+          cwd: 'src/assets/fonts',
           src: ['**'],
-          dest: 'build/fonts',
+          dest: 'dest/assets/fonts',
+        }]
+      },
+      doc: {
+        files: [{
+          expand: true,
+          cwd: 'src/assets/doc',
+          src: ['**'],
+          dest: 'dest/assets/doc',
         }]
       },
       logo: {
         files: [{
           expand: true,
-          cwd: 'src/img',
+          cwd: 'src/assets/img',
           src: ['**/*.png'],
-          dest: 'build/img',
+          dest: 'dest/assets/img',
         }]
       },
-      assets: {
+      lib: {
         files: [{
           expand: true,
-          cwd: 'src/assets',
+          cwd: 'src/assets/lib',
+          src: ['**/*.png'],
+          dest: 'dest/assets/lib',
+        }]
+      },
+      static: {
+        files: [{
+          expand: true,
+          cwd: 'src/assets/static',
           src: ['**'],
-          dest: 'build/',
+          dest: 'dest/assets/static',
         }]
       }
     },
     clean: {
       build: {
-        src: ['build'],
+        src: ['dest'],
       }
     },
     stylus: {
@@ -57,7 +73,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'src/stylus/',
           src: ['**/*.styl'],
-          dest: 'build/css/',
+          dest: 'dest/assets/css/',
           ext: '.css',
         }]
       }
@@ -72,7 +88,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'src/pug/',
           src: ['*.pug'],
-          dest: 'build/',
+          dest: 'dest/',
           ext: '.html'
         }]
       }
@@ -101,7 +117,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: 'build',
+          base: 'dest',
           hostname: '*'
         }
       }
@@ -145,8 +161,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           src: ['**/*.{gif,jpg}'],
-          cwd: 'src/',
-          dest: 'build/'
+          cwd: 'src/assets/img',
+          dest: 'dest/assets/img'
         }]
       }
     }
