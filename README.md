@@ -63,6 +63,10 @@ My font choice of Big John and Montserrat […]
 - [x] Set up SSL/HTTP2
 
 I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [Grunt](https://gruntjs.com/) to compile the Pug and Stylus files and to perform other tasks including generating responsive images.
+
+## Validation and accessibility
+
+![Colour contrast - French Lilac text](/dest/assets/img/colour-contrast-purple.png?raw=true "Concept v5")![Colour contrast - Mine shaft text](/dest/assets/img/colour-contrast-grey.png?raw=true "Concept v6")
 ## Challenges and final thoughts
 ### Images
 - Displaying project images without taking away from design
