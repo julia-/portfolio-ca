@@ -20,13 +20,13 @@ I was then able to start developing potential designs for my portfolio.
 ![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ### Design
-My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I am aiming to capture is a sense of clarity and contrast, as well as bold, clean lines. 
+My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I was aiming to capture a sense of clarity and contrast, as well as bold, clean lines.
 
 My colour palette consists of French Lilac and Mine shaft. In choosing these colours, I was looking for either bright, neon colours or more muted, pastel colours to offset the starkness of the dark grey.
 
-I feel that the choice of French Lilac  gives enough brightness and contrast, while also providing a dramatic effect. From an accessibility perspective, this colour palette is also suitable for people with colour visibility problems.
+I feel that the choice of French Lilac gives enough brightness and contrast, while also providing a dramatic effect. From an accessibility perspective, this colour palette is also suitable for people with colour visibility problems.
 
-My font choice of Big John and Montserrat […]
+I selected a bold, geometric font as I wanted use typography as the main design element.
 
 ### Logo
 [Figma | Logo and Favicon](https://www.figma.com/file/5NCkU4WZgAZ4x7Jls6j6bv/Portfolio-Logo)
@@ -39,8 +39,14 @@ My font choice of Big John and Montserrat […]
 
 ## Style guide
 
+## Usability
+I opted to using an hamburger style icon for the navigation menu but included the word 'menu' next to it for users to easily identify what the icon means. I plan to look at other possibly ways to not have the navigation hidden especially on mobile view.
+
+I need to make changes to the form so when a user clicks a field the lable/placeholder is moved up just above the input field.
 
 ## Development
+
+I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [Grunt](https://gruntjs.com/) to compile the Pug and Stylus files and to perform other tasks including generating responsive images.
 ### Tasks
 - [x] `git init`
 - [x] Create repo on GitHub
@@ -52,19 +58,17 @@ My font choice of Big John and Montserrat […]
 - [x] Large view (laptop)
 - [ ] Extra large view (desktop)
 - [x] Responsive images
+- [ ] Accessibility
 - [x] Navigation
 - [x] Contact form in Netlify
-- [x] Add AJAX to fomr
+- [x] Add AJAX to form
 - [x] Gallery
+- [x] Add hover effect to images
 - [ ] Gallery fullscreen overlay
 - [ ] Single page app (react)
 - [x] Publish portfolio
 - [x] Add custom domain
 - [x] Set up SSL/HTTP2
-
-I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [Grunt](https://gruntjs.com/) to compile the Pug and Stylus files and to perform other tasks including generating responsive images.
-
-## Validation and accessibility
 
 ![Colour contrast - French Lilac text](/dest/assets/img/colour-contrast-purple.png?raw=true "Concept v5")![Colour contrast - Mine shaft text](/dest/assets/img/colour-contrast-grey.png?raw=true "Concept v6")
 ## Challenges and final thoughts
@@ -73,20 +77,20 @@ I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [
 - Project layout
 - Display content about each project
 
-This was one of the sore points with my design. The project screenshots included colours that clashed with my design. To overcome this, I removed the colour from the screenshots and applied a transparent layer. I would like to look at other possibilities for displaying the images as I feel the images are somewhat washed which takes away from the impact from the project.
+This was one of the sore points with my design. The project screenshots included colours that clashed with the design. To overcome this, I removed the colour from the screenshots and applied a transparent layer using French Lilac from my colour scheme.
+
+I would like to look at other possibilities for displaying the images as I feel the images are somewhat washed out which takes away from the impact from the project.
 
 ### Colour scheme
-- Restrictive colour scheme
+#### Restrictive colour scheme
 
 By using a two colour scheeme it has increased the difficulty adding other elements to the website such as notifications for successfully submitting the form.
-
 ### Navigation
 #### Single page app
 
 The fullscreen overlay for the navigation menu has issues with scrolling after selecting certain menu options. I plan to change my site to a single page app or revisit navigation completly.
 
 Ideally I would like to avoid using a hamburger type of symbol for the menu. I have added the word 'menu' next to the symbol but would prefer to find a way to not hide navigation while retaining the integrity of the design.
-
 ### Compatibility and display
 #### Breakpoints
 
@@ -95,3 +99,6 @@ Due to implementation of design, I have found it challenging to ensure portfolio
 #### Testing
 
 I have been unable to test my portfolio on non-iOS devices.
+
+### jQuery and not JavaScript
+I would have prefered to have used JavaScript over jQuery but due time constraints I went with jQuery.
