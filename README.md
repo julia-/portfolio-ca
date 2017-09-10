@@ -13,17 +13,9 @@ I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect ill
 
 I was then able to start developing potential designs for my portfolio.
 
-![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")
+![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")![Concept v3](/dest/assets/img/design-mockup-03.png?raw=true "Concept v3")
 
-![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")
-
-![Concept v3](/dest/assets/img/design-mockup-03.png?raw=true "Concept v3")
-
-![Concept v4](/dest/assets/img/design-mockup-04.png?raw=true "Concept v4")
-
-![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")
-
-![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
+![Concept v4](/dest/assets/img/design-mockup-04.png?raw=true "Concept v4")![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ### Design
 My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I am aiming to capture is a sense of clarity and contrast, as well as bold, clean lines. 
@@ -49,9 +41,9 @@ My font choice of Big John and Montserrat […]
 ## Development
 ### Tasks
 - [x] `git init`
-- [x] Create repo
+- [x] Create repo on GitHub
 - [x] Set up folder and file structure
-- [x] Grunt - conifgure tasks
+- [x] Grunt - configure tasks
 - [x] Extra small view (mobile)
 - [ ] Small view (mobile)
 - [x] Medium view (tablet)
@@ -59,23 +51,41 @@ My font choice of Big John and Montserrat […]
 - [ ] Extra large view (desktop)
 - [x] Responsive images
 - [x] Navigation
+- [x] Contact form in Netlify
+- [x] Add AJAX to fomr
 - [x] Gallery
 - [ ] Gallery fullscreen overlay
 - [ ] Single page app (react)
-
+- [x] Publish portfolio
+- [x] Add custom domain
+- [x] Set up SSL/HTTP2
 
 I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [Grunt](https://gruntjs.com/) to compile the Pug and Stylus files and to perform other tasks including generating responsive images.
-
 ## Challenges and final thoughts
 ### Images
-- Displaying images without taking away from design
-- image layout
+- Displaying project images without taking away from design
+- Project layout
+- Display content about each project
+
+This was one of the sore points with my design. The project screenshots included colours that clashed with my design. To overcome this, I removed the colour from the screenshots and applied a transparent layer. I would like to look at other possibilities for displaying the images as I feel the images are somewhat washed which takes away from the impact from the project.
 
 ### Colour scheme
-- restrictive colour scheme
+- Restrictive colour scheme
+
+By using a two colour scheeme it has increased the difficulty adding other elements to the website such as notifications for successfully submitting the form.
 
 ### Navigation
-- single page app
+#### Single page app
+
+The fullscreen overlay for the navigation menu has issues with scrolling after selecting certain menu options. I plan to change my site to a single page app or revisit navigation completly.
+
+Ideally I would like to avoid using a hamburger type of symbol for the menu. I have added the word 'menu' next to the symbol but would prefer to find a way to not hide navigation while retaining the integrity of the design.
 
 ### Compatibility and display
-- breakpoints
+#### Breakpoints
+
+Due to implementation of design, I have found it challenging to ensure portfolio displays as wanted on different viewports. This is something that I will need to revisit when I continue to improve my portfolio.
+
+#### Testing
+
+I have been unable to test my portfolio on non-iOS devices.
