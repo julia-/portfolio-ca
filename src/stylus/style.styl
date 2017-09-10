@@ -135,6 +135,9 @@ li > a
     font-size 1em
     padding-top 3.750em
 
+  .heading-block
+    display block
+
 .scroll-indicator
   position relative
   .vertical-text
@@ -428,7 +431,7 @@ footer h2
   .heading-container h1
     margin-top 1.563em
     font-size 4em
-    max-width 7em
+    // max-width 7em
   .heading-container p:nth-child(2)
     font-size 4em
     padding-top 1em
@@ -544,6 +547,7 @@ footer h2
   header
   footer
     border 2em solid primaryColor
+  header
     padding 0.5em 12em 1.5em
   footer
     padding 6em 12em 2em 12em
@@ -552,7 +556,7 @@ footer h2
       font-size 4em
       margin-top 1em
       padding-top 0.25em
-      max-width 7.1em
+      // max-width 7.1em
     p:nth-child(2)
       font-size 4em
       padding-top 0.25em
@@ -563,6 +567,17 @@ footer h2
     top 2em
     right 1em
     font-size 1.75em
+  .nav-menu.active
+    border 2em solid secondaryColor
+    padding 6em 12em 3em 12em
+    overflow-y auto
+    h2
+      margin-top 0
+    .nav-links
+      margin-top 0
+    .nav-links > a
+      font-size 2em
+      padding-bottom 1em
   .scroll-indicator .vertical-text
     right 7em
     bottom -2.5em
@@ -576,8 +591,10 @@ footer h2
   h2
     font-size 3.75em
   h3
-    font-size 2.5em
+    font-size 2em
     margin 0.5em auto 0.5em auto
+    &::before
+      width 5%
   .main-container p
   li
   dt
@@ -593,6 +610,7 @@ footer h2
   button
     font-size 1.5em
   dl dt:first-child
+    padding-top 0
   dt
     padding-top 1em
   input::placeholder
