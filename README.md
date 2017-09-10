@@ -13,7 +13,7 @@ I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect ill
 
 I was then able to start developing potential designs for my portfolio.
 
-[Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")
+![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")
 
 ![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")
 
