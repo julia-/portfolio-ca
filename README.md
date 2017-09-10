@@ -16,7 +16,7 @@ I was then started to develop potential designs using mainly black/white as typo
 
 ![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
-### Design
+## Final design
 My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I was aiming to capture a sense of clarity and contrast, as well as bold, clean lines.
 
 My colour palette consists of French Lilac and Mine shaft. In choosing these colours, I was looking for either bright, neon colours or more muted, pastel colours to offset the starkness of the dark grey.
@@ -34,7 +34,7 @@ I selected a bold, geometric font with sharp angles. I wanted use typography as 
 
 [Figma | Desktop](https://www.figma.com/file/98uqAHDzHpsptFj6fotAG2/Portfolio-Desktop)
 
-## Style guide
+### Style guide
 [Style Guide](https://juliaryan.io/assets/doc/portfolio-styleguide.pdf)
 ## Usability
 I opted to using an hamburger style icon for the navigation menu but included the word 'menu' next to it for users to easily identify what the icon means. I plan to look at other possibly ways to not have the navigation hidden especially on mobile view.
