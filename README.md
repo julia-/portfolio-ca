@@ -13,9 +13,11 @@ I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect ill
 
 I was then able to start developing potential designs for my portfolio.
 
-![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")![Concept v3](/dest/assets/img/design-mockup-03.png?raw=true "Concept v3")
+![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")
 
-![Concept v4](/dest/assets/img/design-mockup-04.png?raw=true "Concept v4")![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
+![Concept v3](/dest/assets/img/design-mockup-03.png?raw=true "Concept v3")![Concept v4](/dest/assets/img/design-mockup-04.png?raw=true "Concept v4")
+
+![Concept v5](/dest/assets/img/design-mockup-05.png?raw=true "Concept v5")![Concept v6](/dest/assets/img/design-mockup-06.png?raw=true "Concept v6")
 
 ### Design
 My chosen design was heavily inspired by minimalism and punk/new wave-influenced graphic design. What I am aiming to capture is a sense of clarity and contrast, as well as bold, clean lines. 
