@@ -4,14 +4,11 @@ Demonstrate to prospective employers and other developers my coding experience a
 
 ## Design & Planning
 
-My goal was to design and build a portfolio that stood out and was rememberable but still simple and minimal in design.
+My goal was to design and build a portfolio that was striking and was rememberable but still simple and minimal in design. I wanted to come up with a designed that showed my love for music and architecture through typography and colour.
 
-### Ideation
-Before defining a concept for my portfolio, I explored portfolios from developers, designers and creative agencies.
+Before defining a concept, I explored portfolios from developers, designers and creative agencies to help decide which direction I wanted to take with my design. I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect illustrations, designs, colour swatches, and typography examples to gain inspiration.
 
-I also created a [mood board](http://pin.it/rm5GGe5) in Pinterest to collect illustrations, designs, colours swatches, and typography examples to gain inspiration for my own portfolio.
-
-I was then able to start developing potential designs for my portfolio.
+I was then started to develop potential designs using mainly black/white as typography was going to be the hero in my design.
 
 ![Concept v1](/dest/assets/img/design-mockup-01.png?raw=true "Concept v1")![Concept v2](/dest/assets/img/design-mockup-02.png?raw=true "Concept v2")
 
@@ -26,7 +23,7 @@ My colour palette consists of French Lilac and Mine shaft. In choosing these col
 
 I feel that the choice of French Lilac gives enough brightness and contrast, while also providing a dramatic effect. From an accessibility perspective, this colour palette is also suitable for people with colour visibility problems.
 
-I selected a bold, geometric font as I wanted use typography as the main design element.
+I selected a bold, geometric font with sharp angles. I wanted use typography as the main design element.
 
 ### Logo
 [Figma | Logo and Favicon](https://www.figma.com/file/5NCkU4WZgAZ4x7Jls6j6bv/Portfolio-Logo)
