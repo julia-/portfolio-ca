@@ -7,7 +7,7 @@ html(lang='en')
       include includes/header.pug
       main.main-container
         section.about-container
-          a(name="about")
+          a(id="about")
           h2 About
           p.intro-paragraph I am a developer. I love working in front-end development but also get a kick out of back-end development.
           p I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!
@@ -27,7 +27,7 @@ html(lang='en')
         section.work-container
           include includes/work.pug
         section.skill-container
-          a(name="skills")
+          a(id="skills")
           h2 Experience and skills
           h3 Experience
           dl
@@ -65,7 +65,7 @@ html(lang='en')
             li Git
           a.button(href="/assets/doc/cv-2017-09.pdf") Download CV
         section.contact-container
-          a(name="contact")
+          a(id="contact")
           h2 Contact
           form(name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form")
             .hidden
