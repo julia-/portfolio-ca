@@ -60,7 +60,7 @@ I used [Pug](https://pugjs.org) and [Stylus](http://stylus-lang.com/) and used [
 - [x] Gallery
 - [x] Add hover effect to images
 - [ ] Gallery fullscreen overlay
-- [ ] Single page app (react)
+- [ ] Single page app (ReactJS)
 - [x] Publish portfolio
 - [x] Add custom domain
 - [x] Set up SSL/HTTP2
@@ -98,4 +98,4 @@ Due to implementation of design, I have found it challenging to ensure portfolio
 I have been unable to test my portfolio on non-iOS devices.
 
 ### jQuery and not JavaScript
-I would have prefered to have used JavaScript over jQuery but due time constraints I went with jQuery.
+I would have prefered to have used vanilla JavaScript over jQuery but due time constraints I went with jQuery.
