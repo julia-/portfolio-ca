@@ -4,7 +4,6 @@ var postcss = function() {
 };
 
 module.exports = function (grunt) {
-
   // configure tasks
   grunt.initConfig({
     copy: {
@@ -65,14 +64,14 @@ module.exports = function (grunt) {
     stylus: {
       compile: {
         options: {
-          use: [postcss] 
+          use: [postcss]
           // linenos: false,
           // compress: false
         },
         files: [{
           expand: true,
           cwd: 'src/stylus/',
-          src: ['**/*.styl'],
+          src: ['**/style.styl'],
           dest: 'dest/assets/css/',
           ext: '.css',
         }]
@@ -179,7 +178,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-stylus');
-
 
   // define tasks
   grunt.registerTask('images', ['responsive_images']);
