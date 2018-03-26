@@ -37,177 +37,171 @@
     <script src="/assets/js/main.js" async></script>
   </head>
   <body>
-    <div class="flex-container">
-      <div class="menu-toggle"><span class="open">Menu</span><span class="close">Close</span></div>
-      <nav class="nav-menu">
-        <h2>Menu</h2>
-        <div class="nav-links"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Experience and skills</a><a href="#contact">Contact</a></div>
-      </nav>
-      <header>
-        <section class="heading-container">
-          <h1>Hi, my <span class="heading-block">name is</span> <span class="heading-block">Julia Ryan.</span></h1>
-          <p>I’m a developer based in Melbourne.</p>
-          <p>Want to know more?</p>
-          <div class="scroll-indicator"><span class="vertical-text">Start scrolling</span></div>
+    <div class="menu"><span class="menu--open">Menu</span><span class="menu--close">Close</span></div>
+    <nav class="nav">
+      <h2 class="nav__heading">Menu</h2>
+      <div class="nav__items"><a href="#about">About me</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="#socials">Socials</a></div>
+    </nav>
+    <header class="header">
+      <h1 class="header__heading header__heading--main">Hi, my name is Julia Ryan.</h1>
+      <h2 class="header__heading header__heading--secondary">I’m a developer based in Melbourne.</h2>
+      <p class="header__tagline">Want to know more?</p><span class="header__text--vertical">Start scrolling</span>
+    </header>
+    <main>
+      <section class="section" id="about">
+        <h2 class="section__heading">About me</h2>
+        <p class="paragraph__intro">I am a developer who enjoys working in front-end development but also gets a kick out of back-end development.</p>
+        <p class="paragraph">I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design.</p>
+        <p class="paragraph">I’ve built web applications using Ruby on Rails, Node.js and React and have a strong foundation in web design and development. I've recently completed Coder Academy’s 6 month web development bootcamp.</p>
+        <p class="paragraph">Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.</p>
+        <p class="paragraph">When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando.</p>
+        <h3 class="section__heading section__heading--sub">Interests and likes</h3>
+        <ul class="list">
+          <li class="list__item">Strummer</li>
+          <li class="list__item">Caravaggio</li>
+          <li class="list__item">Dostoyevsky</li>
+          <li class="list__item">Punk</li>
+          <li class="list__item">Marc Maron</li>
+          <li class="list__item">Roxane Gay</li>
+          <li class="list__item">Cats</li>
+          <li class="list__item">Gilmore Girls</li>
+          <li class="list__item">Jason Mantzoukas</li>
+        </ul>
+      </section>
+      <section class="section grid--image" id="work">
+        <h2 class="section__heading grid__heading">Work</h2>
+        <section class="box--project">
+          <h3>Room booking system</h3>
+          <p>Room booking system.</p><a class="project-link" href="https://room-booking-system.netlify.com">Visit Room booking system</a>
         </section>
-      </header>
-      <main class="main-container">
-        <section class="about-container"><a id="about"></a>
-          <h2>About</h2>
-          <p class="intro-paragraph">I am a developer. I love working in front-end development but also get a kick out of back-end development.</p>
-          <p>I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!</p>
-          <p>I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.</p>
-          <p>Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.</p>
-          <p>When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando.</p>
-          <h3>Some interests and likes</h3>
-          <ul class="likes-list">
-            <li>Strummer</li>
-            <li>Caravaggio</li>
-            <li>Dostoyevsky</li>
-            <li>Punk</li>
-            <li>Marc Maron</li>
-            <li>Roxane Gay</li>
-            <li>Cats</li>
-            <li>Gilmore Girls</li>
-            <li>Jason Mantzoukas</li>
-          </ul>
+        <section class="box--project">
+          <h3>Long Play Records</h3>
+          <p>Long Play Records is a two-sided rails marketplace to buy and sell secondhand vinyl records.</p><a class="project-link" href="https://longplayrecords.herokuapp.com">Long Play Records</a><span>|</span><a class="project-link" href="https://longplayrecords.herokuapp.com">Github Repo</a>
         </section>
-        <section class="work-container"><a id="work"></a>
-          <h2>Work</h2>
-          <section class="project-box">
-            <h3>Long Play Records</h3>
-            <p>Long Play Records is a two-sided rails marketplace to buy and sell secondhand vinyl records.</p><a class="project-link" href="https://longplayrecords.herokuapp.com">Visit Long Play Records</a>
-          </section>
-          <section class="project-box">
-            <h3>RunBuddy</h3>
-            <p>RunBuddy is an rails app designed to connect women who want to run together for company, friendship and safety.</p><a class="project-link" href="https://serene-coast-34437.herokuapp.com">Visit RunBuddy</a>
-          </section>
-          <section class="project-box">
-            <h3>Historia</h3><a href="https://historia-app.herokuapp.com/">
-              <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source srcset="/assets/img/historia-1920.jpg 1920w, /assets/img/historia-1600.jpg 1600w /assets/img/historia-1280.jpg 1280w, /assets/img/historia-960.jpg 960w, /assets/img/historia-640.jpg 640w, /assets/img/historia-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/historia-1920.jpg" alt="Historia homepage">
-              </picture></a>
-            <p><span class="alt-font">Historia</span> is a Ruby on Rails web application that I designed and built for people to discover, learn about and favourite places from around the world. I used Wikipedia's API to pull in information from Wikipedia about each place. I also used the Google API to allow people to see where the place is located.</p>
-          </section>
-          <section class="project-box">
-            <h3>Sparkr</h3><a href="https://make-sparks-fly.herokuapp.com/">
-              <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source srcset="/assets/img/sparkr-1920.jpg 1920w, /assets/img/sparkr-1600.jpg 1600w /assets/img/sparkr-1280.jpg 1280w, /assets/img/sparkr-960.jpg 960w, /assets/img/sparkr-640.jpg 640w, /assets/img/sparkr-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/sparkr-1920.jpg" alt="Sparkr homepage">
-              </picture></a>
-            <p><span class="alt-font">Sparkr</span> was a group project. Together we designed and developed Sparkr. Sparkr is a dating service primarily for people over the age of 50. A user needs to like another user's three moments and vice versa for a match to occur. A users's three moments show aspects of their life. People can start chatting once a match has occurred.</p>
-          </section>
-          <section class="project-box">
-            <h3>I was there</h3><a href="https://i-was-there-app.herokuapp.com/">
-              <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source srcset="/assets/img/i-was-there-1920.jpg 1920w, /assets/img/i-was-there-1600.jpg 1600w /assets/img/i-was-there-1280.jpg 1280w, /assets/img/i-was-there-960.jpg 960w, /assets/img/i-was-there-640.jpg 640w, /assets/img/i-was-there-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/i-was-there-1920.jpg" alt="I was there homepage">
-              </picture></a>
-            <p><span class="alt-font">I was there</span> was first rails app that I designed and built for the Web Development Immersive. I used Last.FM's API, to allow users to search for artists and events and to add or read reviews about the show.</p>
-          </section>
-          <section class="project-box">
-            <h3>Ace Metalwork</h3><a href="http://www.acemetalwork.com/">
-              <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source srcset="/assets/img/ace-metalwork-1920.jpg 1920w, /assets/img/ace-metalwork-1600.jpg 1600w /assets/img/ace-metalwork-1280.jpg 1280w, /assets/img/ace-metalwork-960.jpg 960w, /assets/img/ace-metalwork-640.jpg 640w, /assets/img/ace-metalwork-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/ace-metalwork-1920.jpg" alt="Ace Metalwork homepage">
-              </picture></a>
-            <p>After the Front End Web Development course, I gained my first client. I designed and developed a simple one page website to be used for a local Sydney business.</p>
-          </section>
-          <section class="project-box">
-            <h3>Ping Pong Tournament</h3><a href="https://julia-.github.io">
-              <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source srcset="/assets/img/ping-pong-1920.jpg 1920w, /assets/img/ping-pong-1600.jpg 1600w /assets/img/ping-pong-1280.jpg 1280w, /assets/img/ping-pong-960.jpg 960w, /assets/img/ping-pong-640.jpg 640w, /assets/img/ping-pong-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/ping-pong-1920.jpg" alt="Ping Pong Tournament homepage">
-              </picture></a>
-            <p>For my major assignment in the Front End Web Development course I designed and developed a website for a Ping Pong competition. I continued to refine the website after I completed the course. It was used by a local coworking company in Sydney.</p>
-          </section>
-          <section class="project-box">
-            <h3>Band website</h3>
+        <section class="box--project">
+          <h3>RunBuddy</h3>
+          <p>RunBuddy is an rails app designed to connect women who want to run together for company, friendship and safety.</p><a class="project-link" href="https://serene-coast-34437.herokuapp.com">Visit RunBuddy</a>
+        </section>
+        <section class="box--project">
+          <h3>Historia</h3><a href="https://historia-app.herokuapp.com/">
             <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-              <source srcset="/assets/img/band-website-1920.jpg 1920w, /assets/img/band-website-1600.jpg 1600w /assets/img/band-website-1280.jpg 1280w, /assets/img/band-website-960.jpg 960w, /assets/img/band-website-640.jpg 640w, /assets/img/band-website-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/band-website-1920.jpg" alt="Band website homepage">
-            </picture>
-            <p>I designed and developed a website for the band She &amp; Him for my first project for the Front End Web Development course at General Assembly.</p>
-          </section>
+              <source srcset="/assets/img/historia-1920.jpg 1920w, /assets/img/historia-1600.jpg 1600w /assets/img/historia-1280.jpg 1280w, /assets/img/historia-960.jpg 960w, /assets/img/historia-640.jpg 640w, /assets/img/historia-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/historia-1920.jpg" alt="Historia homepage">
+            </picture></a>
+          <p><span class="alt-font">Historia</span> is a Ruby on Rails web application that I designed and built for people to discover, learn about and favourite places from around the world. I used Wikipedia's API to pull in information from Wikipedia about each place. I also used the Google API to allow people to see where the place is located.</p>
         </section>
-        <section class="skill-container"><a id="skills"></a>
-          <h2>Experience and skills</h2>
-          <h3>Experience</h3>
-          <dl>
-            <dt>Project officer, Online Services</dt>
-            <dd>State Library of NSW</dd>
-            <dd>August 2011–March 2017</dd>
-            <dt>Electronic Resources Manager</dt>
-            <dd>EBSCO Information Services</dd>
-            <dd>August 2008–August 2011</dd>
-          </dl>
-          <h3>Education</h3>
-          <dl>
-            <dt>Diploma of Information Technology</dt>
-            <dd>Coder Academy</dd>
-            <dd>July 2017–March 2018</dd>
-            <dt>Web Development Immersive</dt>
-            <dd>General Assembly</dd>
-            <dd>January 2015–April 2015</dd>
-            <dt>Front-End Web Development</dt>
-            <dd>General Assembly</dd>
-            <dd>January 2014–March 2014</dd>
-            <dt>Usability in Practice 3 Day Camp</dt>
-            <dd>Nielsen Norman Group</dd>
-            <dd>July 2012</dd>
-          </dl>
-          <h3>Skills</h3>
-          <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Ruby</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Express.js</li>
-            <li>Node.js</li>
-            <li>ReactJS</li>
-            <li>Pug</li>
-            <li>Stylus</li>
-            <li>Grunt</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>Git</li>
-          </ul><a class="button" href="/assets/doc/cv-2017-11.pdf">Download CV</a>
+        <section class="box--project">
+          <h3>Sparkr</h3><a href="https://make-sparks-fly.herokuapp.com/">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/assets/img/sparkr-1920.jpg 1920w, /assets/img/sparkr-1600.jpg 1600w /assets/img/sparkr-1280.jpg 1280w, /assets/img/sparkr-960.jpg 960w, /assets/img/sparkr-640.jpg 640w, /assets/img/sparkr-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/sparkr-1920.jpg" alt="Sparkr homepage">
+            </picture></a>
+          <p><span class="alt-font">Sparkr</span> was a group project. Together we designed and developed Sparkr. Sparkr is a dating service primarily for people over the age of 50. A user needs to like another user's three moments and vice versa for a match to occur. A users's three moments show aspects of their life. People can start chatting once a match has occurred.</p>
         </section>
-        <section class="contact-container"><a id="contact"></a>
-          <h2>Contact</h2>
-          <form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form">
-            <div class="hidden">
-              <label for="bot-field">Don’t fill out</label>
-              <input name="bot-field">
-            </div>
-            <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
+        <section class="box--project">
+          <h3>I was there</h3><a href="https://i-was-there-app.herokuapp.com/">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/assets/img/i-was-there-1920.jpg 1920w, /assets/img/i-was-there-1600.jpg 1600w /assets/img/i-was-there-1280.jpg 1280w, /assets/img/i-was-there-960.jpg 960w, /assets/img/i-was-there-640.jpg 640w, /assets/img/i-was-there-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/i-was-there-1920.jpg" alt="I was there homepage">
+            </picture></a>
+          <p><span class="alt-font">I was there</span> was first rails app that I designed and built for the Web Development Immersive. I used Last.FM's API, to allow users to search for artists and events and to add or read reviews about the show.</p>
         </section>
-      </main>
-      <footer>
-        <section class="footer-menu-container">
-          <h2>Menu</h2>
-          <ul class="menu-list">
-            <li> <a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li> <a href="#skills">Experience and skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <section class="box--project">
+          <h3>Ace Metalwork</h3><a href="http://www.acemetalwork.com/">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/assets/img/ace-metalwork-1920.jpg 1920w, /assets/img/ace-metalwork-1600.jpg 1600w /assets/img/ace-metalwork-1280.jpg 1280w, /assets/img/ace-metalwork-960.jpg 960w, /assets/img/ace-metalwork-640.jpg 640w, /assets/img/ace-metalwork-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/ace-metalwork-1920.jpg" alt="Ace Metalwork homepage">
+            </picture></a>
+          <p>After the Front End Web Development course, I gained my first client. I designed and developed a simple one page website to be used for a local Sydney business.</p>
+        </section>
+        <section class="box--project">
+          <h3>Ping Pong Tournament</h3><a href="https://julia-.github.io">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/assets/img/ping-pong-1920.jpg 1920w, /assets/img/ping-pong-1600.jpg 1600w /assets/img/ping-pong-1280.jpg 1280w, /assets/img/ping-pong-960.jpg 960w, /assets/img/ping-pong-640.jpg 640w, /assets/img/ping-pong-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/ping-pong-1920.jpg" alt="Ping Pong Tournament homepage">
+            </picture></a>
+          <p>For my major assignment in the Front End Web Development course I designed and developed a website for a Ping Pong competition. I continued to refine the website after I completed the course. It was used by a local coworking company in Sydney.</p>
+        </section>
+        <section class="box--project">
+          <h3>Band website</h3>
+          <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/assets/img/band-website-1920.jpg 1920w, /assets/img/band-website-1600.jpg 1600w /assets/img/band-website-1280.jpg 1280w, /assets/img/band-website-960.jpg 960w, /assets/img/band-website-640.jpg 640w, /assets/img/band-website-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/band-website-1920.jpg" alt="Band website homepage">
+          </picture>
+          <p>I designed and developed a website for the band She &amp; Him for my first project for the Front End Web Development course at General Assembly.</p>
+        </section>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section__heading">Experience</h2>
+        <dl class="data-list">
+          <dt class="data-list__term">Front-End Developer (Intern)</dt>
+          <dd class="data-list__description">Serraview</dd>
+          <dd class="data-list__description">February 2018 – March 2018</dd>
+          <dt class="data-list__term">Project officer, Online Services</dt>
+          <dd class="data-list__description">State Library of NSW</dd>
+          <dd class="data-list__description">August 2011 – March 2017</dd>
+          <dt class="data-list__term">Electronic Resources Manager</dt>
+          <dd class="data-list__description">EBSCO Information Services</dd>
+          <dd class="data-list__description">August 2008 – August 2011</dd>
+        </dl><a class="button" href="/assets/doc/cv-2017-11.pdf">Download CV</a>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section__heading">Education</h2>
+        <dl class="data-list">
+          <dt class="data-list__term">Diploma of Information Technology</dt>
+          <dd class="data-list__description">Coder Academy</dd>
+          <dd class="data-list__description">July 2017 – March 2018</dd>
+          <dt class="data-list__term">Web Development Immersive</dt>
+          <dd class="data-list__description">General Assembly</dd>
+          <dd class="data-list__description">January 2015 – April 2015</dd>
+          <dt class="data-list__term">Front-End Web Development</dt>
+          <dd class="data-list__description">General Assembly</dd>
+          <dd class="data-list__description">January 2014 – March 2014</dd>
+          <dt class="data-list__term">Usability in Practice 3 Day Camp</dt>
+          <dd class="data-list__description">Nielsen Norman Group</dd>
+          <dd class="data-list__description">July 2012</dd>
+        </dl>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section__heading">Skills</h2>
+        <ul class="list">
+          <li class="list__item">HTML</li>
+          <li class="list__item">CSS</li>
+          <li class="list__item">Ruby</li>
+          <li class="list__item">Ruby on Rails</li>
+          <li class="list__item">JavaScript</li>
+          <li class="list__item">Express.js</li>
+          <li class="list__item">Node.js</li>
+          <li class="list__item">ReactJS</li>
+          <li class="list__item">Pug</li>
+          <li class="list__item">Stylus</li>
+          <li class="list__item">Grunt</li>
+          <li class="list__item">PostgreSQL</li>
+          <li class="list__item">MongoDB</li>
+          <li class="list__item">Git</li>
+        </ul>
+      </section>
+      <section class="section" id="contact">
+        <h2 class="section__heading">Contact</h2>
+        <form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form">
+          <div class="hidden">
+            <label for="bot-field">Don’t fill out</label>
+            <input name="bot-field">
+          </div>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div class="footer__menu">
+          <h2 class="section__heading">Connect</h2>
+          <ul class="list--type-none">
+            <li class="list__item list__item--large"><a href="https://github.com/julia-">GitHub</a></li>
+            <li class="list__item list__item--large"><a href="https://www.linkedin.com/in/juliaryan/">LinkedIn</a></li>
+            <li class="list__item list__item--large"><a href="https://twitter.com/juliax___">Twitter</a></li>
           </ul>
-        </section>
-        <section class="connect-container">
-          <h2>Connect</h2>
-          <ul class="connect-list">
-            <li><a href="https://github.com/julia-">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/juliaryan/">LinkedIn</a></li>
-            <li><a href="https://twitter.com/juliax___">Twitter</a></li>
-          </ul>
-        </section>
+        </div>
         <div class="author-container">
           <p>Made with <span class="heart"></span> by Julia Ryan</p>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
