@@ -4,225 +4,264 @@ secondaryColor = #222222
 @font-face
   font-family 'Big John'
   src: url("/assets/fonts/big-john-webfont.woff2") format('woff2'),
-      url("/assets/fonts/big-john-webfont.woff") format('woff');
+       url("/assets/fonts/big-john-webfont.woff") format('woff');
   font-weight normal
   font-style normal
 
 *
+  box-sizing border-box
   margin 0
   padding 0
-  box-sizing border-box
   max-width 100%
 
-.flex-container
-  display flex
-  flex-direction column
+html
+body
+  box-sizing border-box
+  font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 62.5%
+  height 100%
+  margin 0
+  overflow auto
 
-body.noscroll
-  overflow hidden
-
-header
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  background secondaryColor
-  border 0.938em solid primaryColor
-  color primaryColor
-  width 100vw
-  min-height 100vh
-  padding 1.563em 1.250em 0 1.250em
-
-.menu-toggle
-  position absolute
-  top 2.25em
-  right 1.25em
-  text-align center
-  height .95em
+.menu
   cursor pointer
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 2em
+  height 1em
+  mix-blend-mode difference
   padding-right 3em
+  position fixed
+  right 1em
+  text-align center
+  top 2.6em
+  &:before
+  &:after
+    background primaryColor
+    content ''
+    height 0.2em
+    position absolute
+    right 1.25em
+    width 1em
+  &:before
+    top 0em
+    transition .5s
+  &:after
+    bottom 0.2em
+    transition .5s
+  &.menu--active
+    z-index 1000
+    mix-blend-mode unset
+    &:before
+      background secondaryColor
+      top 0.4em
+      transform rotate(45deg)
+    &:after
+      background secondaryColor
+      bottom 0.4em
+      transform rotate(-45deg)
+  &.menu--active .menu--open
+      display none
 
-.open
-.close
-  position absolute
-  top 0
-  right 2.75em
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-
-.open
+.menu--open
   color primaryColor
   cursor pointer
-  user-select none
   padding-right 0.333em
-
-.close
-  display none
-
-.close.active
-  display block
-  color secondaryColor
-  cursor pointer
   user-select none
-  padding-right 0.333em
 
-.menu-toggle.active .open
+.menu--close
   display none
+  &.menu--active
+    color secondaryColor
+    cursor pointer
+    display block
+    padding-right 0.333em
+    user-select none
 
-.menu-toggle::before
-.menu-toggle::after
-  content ''
-  position absolute
-  width 1em
-  height 0.2em
-  right 1.25em
+.nav
+  display none
+.nav--active
   background primaryColor
-
-.menu-toggle::before
-  top 0em
-  transition .5s
-
-.menu-toggle::after
-  bottom 0.2em
-  transition .5s
-
-.menu-toggle.active::before
-  background secondaryColor
-  top 0.4em
-  transform rotate(45deg)
-
-.menu-toggle.active::after
-  background secondaryColor
-  bottom 0.4em
-  transform rotate(-45deg)
-
-.nav-menu
-  display none
-
-.nav-menu.active
+  border 3em solid secondaryColor
+  bottom 0
   display block
   height 100vh
-  background primaryColor
-  border 0.938em solid secondaryColor
-  padding 1.25em 1.25em 0 1.25em
+  left 0
+  padding 5em 3em 0 3em
+  position absolute
   overflow-y auto
-  h2
-    margin-top 1.184em
-  .nav-links
-    margin-top 1.875em
-  .nav-links > a
+  overflow-x auto
+  right 0
+  top 0
+  z-index 999
+
+.header
+  background secondaryColor
+  border 3em solid primaryColor
+  color primaryColor
+  display grid
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  grid-gap 1em
+  grid-template-columns auto 1fr
+  grid-template-rows 2fr 2fr 1fr
+  height 100vh
+  padding 5em 3em 0 3em
+  width 100vw
+
+.header__heading
+  align-self center
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 4.4em
+  justify-self start
+  margin .4em
+  grid-column 1 / -1
+
+.header__tagline
+  align-self start
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 2em
+  grid-column 1 / 2
+  grid-row 3 / 4
+  margin .6em
+  justify-self center
+
+.header__text--vertical
+  align-self start
+  cursor default
+  grid-column 2 / 3
+  grid-row 3 / 4
+  justify-self center
+  padding 1em
+  word-spacing 1em
+  writing-mode vertical-rl
+
+.section
+  background primaryColor
+  border 3em solid secondaryColor
+  color secondaryColor
+  width 100vw
+  min-height 100vh
+  padding 5em 3em 0 3em
+
+.footer
+  background secondaryColor
+  border 3em solid primaryColor
+  color primaryColor
+  display grid
+  grid-template-row 1fr 1fr 1fr
+  width 100vw
+  min-height 100vh
+  padding 5em 3em 0 3em
+
+.nav__heading
+    margin-top 1.8em
+  .nav__items
+    margin-top 1.8em
+  .nav__items > a
+    color secondaryColor
     font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
     font-size 1.75em
-    color secondaryColor
-    padding-bottom 0.714em
+    padding-bottom 1em
 
-.nav-links > a
+.nav__items > a
 li > a
   display block
   text-decoration none
 
 li > a
-  color primaryColor
+  color secondaryColor
 
 .hidden
   display none
 
-.heading-container
-  margin-top 2.813em
-  h1
-    font-size 2.25em
-    padding-bottom 0.556em
-  p:nth-child(2)
-    font-size 2.25em
-    padding-top 0.556em
-  p:nth-child(3)
-    font-size 1em
-    padding-top 2.5em
+.grid--image
+  display grid
+  grid-gap 10px
+  grid-template-columns repeat(auto-fit, minmax(180px, 1fr))
+  padding 3em
 
-  .heading-block
-    display block
+.grid__heading
+  grid-column 1 / -1
+// main
+//   background primaryColor
+//   border 3em solid secondaryColor
+//   color secondaryColor
+//   width 100vw
+//   section:last-child
+//     border-bottom none
 
-.scroll-indicator
-  position relative
-  .vertical-text
-    display block
-    position absolute
-    right -0.25em
-    bottom -4.75em
-    font-size 0.75em
-    writing-mode vertical-lr
-  .fa-long-arrow-down
-    position absolute
-    right -0.15em
-    bottom -1.85em
-    color primaryColor
+// main > section
+//   height 100vh
+//   border-bottom 3em solid secondaryColor
+//   padding 5em 3em 0 3em
 
-main
-  background primaryColor
-  border 0.938em solid secondaryColor
-  color secondaryColor
-  width 100vw
-  // padding 2.188em 1.250em
-  section:last-child
-    border-bottom none
+.paragraph
+  font-size 1.4em
+  line-height 1.25em
+  padding-bottom 0.4em
 
-main > section
-  min-height 100vh
-  border-bottom 0.938em solid secondaryColor
-  // padding 2.188em 1.250em
-  padding 4.063em 1.250em
+.list
+  list-style square inside
+  margin-left 1em
+  padding 1em 0
 
-main p
-  padding-bottom 1em
+.list--type-none
+    list-style none
+    margin 0
+    padding 0
 
-main p
-dd
+.data-list__description
+.list__item
   font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  line-height 1.5em
+  line-height 1.25em
   font-weight 300
-  font-size 1em
+  font-size 1.4em
+  &--large
+    font-size 1.6em
 
-dt
+.data-list__term
   font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1em
+  font-size 1.6em
   padding-top 1em
 
-dl
+.data-list
   margin 2em 0
-  dt:first-child
-    padding-top 0
+  .data-list__term:first-child
+    padding-top 0.4em
 
-h2
-h3
+.nav__heading
+.section__heading
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 3em
+  margin 0.5em 0
+  padding 0.5em 0
   position relative
-  padding-bottom 0.5em
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-
-h2
-  font-size 2.125em
-  margin-bottom 1em
   &:before
     content ''
-    border-bottom 5px solid secondaryColor
+    border-bottom 0.2em solid secondaryColor
     position absolute
     left 0
     bottom 0
     height 1px
     width 10%
 
-h3
-  font-size 1.5em
-  margin 0.25em auto 0.5em auto
+.section__heading--sub
+  font-size 2em
+  margin 1em 0 0.5em 0
+  padding 0.5em 0
   &:before
     content ''
-    border-bottom 5px solid secondaryColor
+    border-bottom 0.2em solid secondaryColor
     position absolute
     left 0
     bottom 0
     height 1px
     width 10%
 
-.intro-paragraph
+.paragraph__intro
   font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1.125em
-  line-height 1em
-  margin 1.111em 0
+  font-size 1.2em
+  line-height 1.25em
+  margin 1em 0
   padding 0
 
 // .image-grid
@@ -232,25 +271,10 @@ h3
 //   margin-top 1.563em
 
 img
-  max-width 100%
-  height auto
+  // max-width 100%
+  // height auto
   border 0.25em solid secondaryColor
   margin 0.25em 0
-
-ul
-  list-style none
-  padding 1em 0
-
-.likes-list
-.skills-list
-  margin-left 1em
-  list-style square inside
-
-li
-  font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  font-weight 300
-  font-size 1em
-  line-height 1.5em
 
 .project-link
   font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
@@ -346,36 +370,7 @@ button[type="submit"]
   &:focus
     outline none
 
-footer
-  display flex
-  flex-direction column
-  justify-content space-between
-  background secondaryColor
-  border 0.938em solid primaryColor
-  color primaryColor
-  min-height 50vh
-  height auto
-  padding 4.063em 1.250em 1.563em 1.250em
-  li
-    font-size 1.25em
-  p
-    font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-    font-size 0.8em
-
-footer h2
-  margin-bottom 0
-  &:before
-    border-bottom 0.2em solid primaryColor
-
-.footer-menu-container
-  order 2
-
-.connect-container
-  order 1
-  margin-bottom 1.875em
-
 .author-container
-  order 3
   margin 1.563em auto 0.5em auto
   text-align center
 
@@ -384,17 +379,17 @@ footer h2
   position relative
   background primaryColor
   top 0
-  width 0.75em
-  height 0.75em
+  width 1em
+  height 1em
   transform rotate(45deg)
-  margin 0 0.5em
+  margin 0 1em
   animation heartbeat 1.2s ease infinite
   &::before
   &::after
     content ''
     background primaryColor
-    width 0.75em
-    height 0.75em
+    width 1em
+    height 1em
     position absolute
     border-radius 50%
   &::before
@@ -414,221 +409,221 @@ footer h2
 
 // MEDIA QUERIES
 // Small Devices
-@media (min-width: 375px)
-  header
-    padding-left 2.3em
-    padding-right 2.3em
-  .heading-container
-    h1
-      font-size 2.375em
-    p:nth-child(2)
-      font-size 2.375em
-      padding-top 1.25em
-      padding-bottom 1.75em
-    p:nth-child(3)
-      font-size 1.15em
-      padding-top 2.75em
-    .scroll-indicator .vertical-text
-      right -1em
+// @media (min-width: 375px)
+//   header
+//     padding-left 2.3em
+//     padding-right 2.3em
+//   .heading-container
+//     h1
+//       font-size 2.375em
+//     p:nth-child(2)
+//       font-size 2.375em
+//       padding-top 1.25em
+//       padding-bottom 1.75em
+//     p:nth-child(3)
+//       font-size 1.15em
+//       padding-top 2.75em
+//     .scroll-indicator .vertical-text
+//       right -1em
 
 // Medium Devices
-@media (min-width: 768px)
-  header
-    border 1.563em solid primaryColor
-    padding-top 3.75em
-    padding-left 4.250em
-    padding-right 4.250em
-  .heading-container h1
-    margin-top 1.563em
-    font-size 4em
-  .heading-container p:nth-child(2)
-    font-size 4em
-    padding-top 1em
-    padding-bottom 0
-  .heading-container p:nth-child(3)
-    font-size 2.5em
-    padding-top 0
-    margin-top 2.5em
-  .menu-toggle
-    top 2.75em
-    right 1.25em
-    height 1em
-    padding-right 3.25em
-    font-size 1.75em
-  .menu-toggle::before
-  .menu-toggle::after
-    width 1.25em
-    height .3em
-    right 1.25em
-  .menu-toggle.active::before
-    top .35em
-  .menu-toggle.active::after
-    bottom .35em
-  .open
-  .close
-    right 3em
-  .vertical-text
-    right -1.15em
-    bottom -2.25em
-    font-size 1.25em
-  .fa-long-arrow-down
-    right -0.5em
-    bottom -2.15em
-  main
-    border 1.563em solid secondaryColor
-  .main-container > section
-    border-bottom 1.563em solid secondaryColor
-    padding-top 3.75em
-    padding-left 4.250em
-    padding-right 4.250em
-  h2
-    font-size 4em
-  .main-container p
-  li
-  dt
-  dd
-    font-size 1.5em
-  .image-grid
-    display flex
-    flex-direction row
-    flex-wrap wrap
-    justify-content space-between
-    margin-top 1.563em
-  .image-grid > img
-    max-width 49%
-    border 0.5em solid secondaryColor
-  img:nth-child(odd)
-    margin-right 0.25em
+// @media (min-width: 768px)
+//   header
+//     border 1.563em solid primaryColor
+//     padding-top 3.75em
+//     padding-left 4.250em
+//     padding-right 4.250em
+//   .heading-container h1
+//     margin-top 1.563em
+//     font-size 4em
+//   .heading-container p:nth-child(2)
+//     font-size 4em
+//     padding-top 1em
+//     padding-bottom 0
+//   .heading-container p:nth-child(3)
+//     font-size 2.5em
+//     padding-top 0
+//     margin-top 2.5em
+//   .menu
+//     top 2.75em
+//     right 1.25em
+//     height 1em
+//     padding-right 3.25em
+//     font-size 1.75em
+//   .menu::before
+//   .menu::after
+//     width 1.25em
+//     height .3em
+//     right 1.25em
+//   .menu.menu--active::before
+//     top .35em
+//   .menu.menu--active::after
+//     bottom .35em
+//   .open
+//   .close
+//     right 3em
+//   .vertical-text
+//     right -1.15em
+//     bottom -2.25em
+//     font-size 1.25em
+//   .fa-long-arrow-down
+//     right -0.5em
+//     bottom -2.15em
+//   main
+//     border 1.563em solid secondaryColor
+//   .main-container > section
+//     border-bottom 1.563em solid secondaryColor
+//     padding-top 3.75em
+//     padding-left 4.250em
+//     padding-right 4.250em
+//   h2
+//     font-size 4em
+//   .main-container p
+//   li
+//   dt
+//   dd
+//     font-size 1.5em
+//   .image-grid
+//     display flex
+//     flex-direction row
+//     flex-wrap wrap
+//     justify-content space-between
+//     margin-top 1.563em
+//   .image-grid > img
+//     max-width 49%
+//     border 0.5em solid secondaryColor
+//   img:nth-child(odd)
+//     margin-right 0.25em
 
 // Large Devices
-@media (min-width: 1024px)
-  header
-    border 2.188em solid primaryColor
-    padding 7.25em 8.375em
-  .heading-container
-    h1
-    p:nth-child(2)
-      font-size 4.5em
-      padding-top 1.042em
-    p:nth-child(3)
-      font-size 3em
-      margin-top 3.25em
-  .vertical-text
-    right -2em
-    bottom -2.25em
-    font-size 1.5em
-  .fa-long-arrow-down
-    right -1em
-    bottom -2.5em
-  .menu-toggle
-    top 3.125em
-    right 1.5em
-    height 1em
-    padding-right 3em
-    font-size 2.25em
-  h2
-    font-size 4.250em
-    &::before
-      border-bottom 0.2em solid secondaryColor
-  h3
-    font-size 3.875em
-    &::before
-      border-bottom 0.2em solid secondaryColor
-  main
-    border 2.188em solid secondaryColor
-  .main-container > section
-    border-bottom 2.188em solid secondaryColor
-    padding 7.25em 8.375em
-  .main-container p
-  li
-  dt
-  dd
-    font-size 2em
-    line-height 125%
-  dl dt:first-child
-  dt
-    padding-top 1.5em
-  dl dd:last-child
-    padding-bottom 1.5em
-  .button
-    font-size 2.5em
+// @media (min-width: 1024px)
+//   header
+//     border 2.188em solid primaryColor
+//     padding 7.25em 8.375em
+//   .heading-container
+//     h1
+//     p:nth-child(2)
+//       font-size 4.5em
+//       padding-top 1.042em
+//     p:nth-child(3)
+//       font-size 3em
+//       margin-top 3.25em
+//   .vertical-text
+//     right -2em
+//     bottom -2.25em
+//     font-size 1.5em
+//   .fa-long-arrow-down
+//     right -1em
+//     bottom -2.5em
+//   .menu
+//     top 3.125em
+//     right 1.5em
+//     height 1em
+//     padding-right 3em
+//     font-size 2.25em
+//   h2
+//     font-size 4.250em
+//     &::before
+//       border-bottom 0.2em solid secondaryColor
+//   h3
+//     font-size 3.875em
+//     &::before
+//       border-bottom 0.2em solid secondaryColor
+//   main
+//     border 2.188em solid secondaryColor
+//   .main-container > section
+//     border-bottom 2.188em solid secondaryColor
+//     padding 7.25em 8.375em
+//   .main-container p
+//   li
+//   dt
+//   dd
+//     font-size 2em
+//     line-height 125%
+//   dl dt:first-child
+//   dt
+//     padding-top 1.5em
+//   dl dd:last-child
+//     padding-bottom 1.5em
+//   .button
+//     font-size 2.5em
 
 // Extra Large Devices
-@media (min-width: 1200px)
-  header
-  footer
-    border 2em solid primaryColor
-  header
-    padding 0.5em 12em 1.5em
-  footer
-    padding 6em 12em 2em 12em
-  .heading-container
-    h1
-      font-size 4em
-      margin-top 1em
-      padding-top 0.25em
-    p:nth-child(2)
-      font-size 4em
-      padding-top 0.25em
-    p:nth-child(3)
-      font-size 3em
-      margin-top 1.5em
-  .menu-toggle
-    top 2em
-    right 1em
-    font-size 1.75em
-  .nav-menu.active
-    border 2em solid secondaryColor
-    padding 6em 12em 3em 12em
-    overflow-y auto
-    h2
-      margin-top 0
-    .nav-links
-      margin-top 0
-    .nav-links > a
-      font-size 2em
-      padding-bottom 1em
-  .scroll-indicator .vertical-text
-    right 7em
-    bottom -2.5em
-  main
-    border 2em solid secondaryColor
-  .main-container > section
-    border-bottom 2em solid secondaryColor
-    padding 6em 12em 3em 12em
-  .contact-container
-    min-height 92vh
-  h2
-    font-size 3.75em
-  h3
-    font-size 2em
-    margin 0.5em auto 0.5em auto
-    &::before
-      width 5%
-  .main-container p
-  li
-  dt
-  dd
-    font-size 1.25em
-    line-height 135%
-  .main-container p.intro-paragraph
-    font-size 1.5em
-  img
-    max-width 100%
-    border 0.75em solid secondaryColor
-    margin-bottom 1em
-  .button
-    font-size 1.25em
-    margin 2em auto
-  dl dt:first-child
-    padding-top 0
-  dt
-    padding-top 1em
-  input::placeholder
-    font-size 1.25em
-  label[for="message"]
-    font-size 1.25em
-  textarea
-    margin-top 0.25em
-  footer p
-    margin 0 auto
+// @media (min-width: 1200px)
+//   header
+//   footer
+//     border 2em solid primaryColor
+//   header
+//     padding 0.5em 12em 1.5em
+//   footer
+//     padding 6em 12em 2em 12em
+//   .heading-container
+//     h1
+//       font-size 4em
+//       margin-top 1em
+//       padding-top 0.25em
+//     p:nth-child(2)
+//       font-size 4em
+//       padding-top 0.25em
+//     p:nth-child(3)
+//       font-size 3em
+//       margin-top 1.5em
+//   .menu
+//     top 2em
+//     right 1em
+//     font-size 1.75em
+//   .nav.nav--active
+//     border 2em solid secondaryColor
+//     padding 6em 12em 3em 12em
+//     overflow-y auto
+//     h2
+//       margin-top 0
+//     .nav__items
+//       margin-top 0
+//     .nav__items > a
+//       font-size 2em
+//       padding-bottom 1em
+//   .scroll-indicator .vertical-text
+//     right 7em
+//     bottom -2.5em
+//   main
+//     border 2em solid secondaryColor
+//   .main-container > section
+//     border-bottom 2em solid secondaryColor
+//     padding 6em 12em 3em 12em
+//   .contact-container
+//     min-height 92vh
+//   h2
+//     font-size 3.75em
+//   h3
+//     font-size 2em
+//     margin 0.5em auto 0.5em auto
+//     &::before
+//       width 5%
+//   .main-container p
+//   li
+//   dt
+//   dd
+//     font-size 1.25em
+//     line-height 135%
+//   .main-container p.intro-paragraph
+//     font-size 1.5em
+//   img
+//     max-width 100%
+//     border 0.75em solid secondaryColor
+//     margin-bottom 1em
+//   .button
+//     font-size 1.25em
+//     margin 2em auto
+//   dl dt:first-child
+//     padding-top 0
+//   dt
+//     padding-top 1em
+//   input::placeholder
+//     font-size 1.25em
+//   label[for="message"]
+//     font-size 1.25em
+//   textarea
+//     margin-top 0.25em
+//   footer p
+//     margin 0 auto
