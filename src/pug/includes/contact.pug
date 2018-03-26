@@ -1,0 +1,25 @@
+section#contact.section
+  h2.section__heading Contact
+  form(name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form")
+    .hidden
+      label(for="bot-field") Don’t fill out
+      input(name="bot-field")
+    label(for="name")
+    input(type="text" id="name" name="name" placeholder="Name" required)
+    label(for="email")
+    input(type="email" id="email" name="email" placeholder="Email" required)
+    label(for="message") Message
+    textarea(name="message" id="message" required)
+    button(type="submit") Send
+    //- div.success-notification Thank you! I'll be in touch shortly!
+  .footer__menu
+    h2.section__heading Connect
+    ul.list--type-none
+      li.list__item.list__item--large
+        a(href="https://github.com/julia-") GitHub
+      li.list__item.list__item--large
+        a(href="https://www.linkedin.com/in/juliaryan/") LinkedIn
+      li.list__item.list__item--large
+        a(href="https://twitter.com/juliax___") Twitter
+  .author-container
+    p Made with <span class="heart"></span> by Julia Ryan
