@@ -3,85 +3,12 @@ html(lang='en')
   head
     include includes/head.pug
   body
-    .flex-container
-      include includes/header.pug
-      main.main-container
-        section.about-container
-          a(id="about")
-          h2 About
-          p.intro-paragraph I am a developer. I love working in front-end development but also get a kick out of back-end development.
-          p I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design. I also have an eye for detail so I'll spot that missing parenthesis!
-          p I’ve built web applications using Ruby on Rails and have a strong foundation in web design and development. I am currently attending Coder Academy’s web development bootcamp.
-          p Before moving into development, I worked in the Library and Information Management sector, where I produced and managed content.
-          p When I'm not coding, I enjoy spending time with friends, family and my two cats, Willow and Orlando.
-          h3 Some interests and likes
-          ul.likes-list
-            li Strummer
-            li Caravaggio
-            li Dostoyevsky
-            li Punk
-            li Marc Maron
-            li Roxane Gay
-            li Cats
-            li Gilmore Girls
-            li Jason Mantzoukas
-        section.work-container
-          include includes/work.pug
-        section.skill-container
-          a(id="skills")
-          h2 Experience and skills
-          h3 Experience
-          dl
-            dt Project officer, Online Services
-            dd State Library of NSW
-            dd August 2011–March 2017
-            dt Electronic Resources Manager
-            dd EBSCO Information Services
-            dd August 2008–August 2011
-          h3 Education
-          dl
-            dt Diploma of Information Technology
-            dd Coder Academy
-            dd July 2017–March 2018
-            dt Web Development Immersive
-            dd General Assembly
-            dd January 2015–April 2015
-            dt Front-End Web Development
-            dd General Assembly
-            dd January 2014–March 2014
-            dt Usability in Practice 3 Day Camp
-            dd Nielsen Norman Group
-            dd July 2012
-          h3 Skills
-          ul.skills-list
-            li HTML
-            li CSS
-            li Ruby
-            li Ruby on Rails
-            li JavaScript
-            li Express.js
-            li Node.js
-            li ReactJS
-            li Pug
-            li Stylus
-            li Grunt
-            li PostgreSQL
-            li MongoDB
-            li Git
-          a.button(href="/assets/doc/cv-2017-11.pdf") Download CV
-        section.contact-container
-          a(id="contact")
-          h2 Contact
-          form(name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form")
-            .hidden
-              label(for="bot-field") Don’t fill out
-              input(name="bot-field")
-            label(for="name")
-            input(type="text" id="name" name="name" placeholder="Name" required)
-            label(for="email")
-            input(type="email" id="email" name="email" placeholder="Email" required)
-            label(for="message") Message
-            textarea(name="message" id="message" required)
-            button(type="submit") Send
-          //- div.success-notification Thank you! I'll be in touch shortly!
-      include includes/footer.pug
+    include includes/header.pug
+    main
+      include includes/about.pug
+      include includes/work.pug
+      include includes/experience.pug
+      include includes/education.pug
+      include includes/skills.pug
+      include includes/contact.pug
+      //- include includes/footer.pug
