@@ -40,11 +40,11 @@
     <div class="menu"><span class="menu--open">Menu</span><span class="menu--close">Close</span></div>
     <nav class="nav">
       <h2 class="nav__heading">Menu</h2>
-      <div class="nav__items"><a href="#about">About me</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="#socials">Socials</a></div>
+      <div class="nav__items"><a href="#about">About me</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
     </nav>
     <header class="header">
-      <h1 class="header__heading header__heading--main">Hi, my name is Julia Ryan.</h1>
-      <h2 class="header__heading header__heading--secondary">I’m a developer based in Melbourne.</h2>
+      <h1 class="header__heading header__heading--main">Hi, my name is <br>Julia Ryan.</h1>
+      <h2 class="header__heading header__heading--secondary">I’m a developer <br>based in Melbourne.</h2>
       <p class="header__tagline">Want to know more?</p><span class="header__text--vertical">Start scrolling</span>
     </header>
     <main>
@@ -68,61 +68,91 @@
           <li class="list__item">Jason Mantzoukas</li>
         </ul>
       </section>
-      <section class="section grid--image" id="work">
+      <section class="section grid--projects" id="work">
         <h2 class="section__heading grid__heading">Work</h2>
-        <section class="box--project">
-          <h3>Room booking system</h3>
-          <p>Room booking system.</p><a class="project-link" href="https://room-booking-system.netlify.com">Visit Room booking system</a>
+        <section class="project__box">
+          <h3 class="project__heading">Room booking system</h3>
+          <p class="paragraph">Designed and developed a room booking system using Node.js and React for a client. This was a group project that was completed for the Web Development Bootcamp.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://room-booking-system.netlify.com">Visit Room Booking System</a></li>
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/room-booking-system" alt="View Room Booking System GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>Long Play Records</h3>
-          <p>Long Play Records is a two-sided rails marketplace to buy and sell secondhand vinyl records.</p><a class="project-link" href="https://longplayrecords.herokuapp.com">Long Play Records</a><span>|</span><a class="project-link" href="https://longplayrecords.herokuapp.com">Github Repo</a>
+        <section class="project__box">
+          <h3 class="project__heading">Long Play Records</h3>
+          <p class="paragraph">Long Play Records is a two-sided marketplace to buy and sell secondhand vinyl records. I designed and built this app using Ruby on Rails.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://longplayrecords.herokuapp.com">Visit Long Play Records</a></li>
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/long-play-records" alt="Long Play Records GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>RunBuddy</h3>
-          <p>RunBuddy is an rails app designed to connect women who want to run together for company, friendship and safety.</p><a class="project-link" href="https://serene-coast-34437.herokuapp.com">Visit RunBuddy</a>
+        <section class="project__box">
+          <h3 class="project__heading">Portfolio</h3>
+          <p class="paragraph">I designed and developed my portfolio site as part of the Web Development Bootcamp.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/portfolio-ca" alt="Portfolio GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>Historia</h3><a href="https://historia-app.herokuapp.com/">
+        <section class="project__box">
+          <h3 class="project__heading">Historia</h3><a href="https://historia-app.herokuapp.com">
             <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-              <source srcset="/assets/img/historia-1920.jpg 1920w, /assets/img/historia-1600.jpg 1600w /assets/img/historia-1280.jpg 1280w, /assets/img/historia-960.jpg 960w, /assets/img/historia-640.jpg 640w, /assets/img/historia-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/historia-1920.jpg" alt="Historia homepage">
+              <source srcset="/assets/img/historia-1920.jpg 1920w, /assets/img/historia-1600.jpg 1600w /assets/img/historia-1280.jpg 1280w, /assets/img/historia-960.jpg 960w, /assets/img/historia-640.jpg 640w, /assets/img/historia-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img class="project__image" src="/assets/img/historia-1920.jpg" alt="Historia homepage">
             </picture></a>
-          <p><span class="alt-font">Historia</span> is a Ruby on Rails web application that I designed and built for people to discover, learn about and favourite places from around the world. I used Wikipedia's API to pull in information from Wikipedia about each place. I also used the Google API to allow people to see where the place is located.</p>
+          <p class="paragraph">Historia is a Ruby on Rails web application that I designed and developed for people to discover and learn about places. I used Wikipedia's API to pull in information about each place and used the Google API to enable people to see where the place is located.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://historia-app.herokuapp.com">Visit Historia</a></li>
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/historia" alt="Historia GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>Sparkr</h3><a href="https://make-sparks-fly.herokuapp.com/">
+        <section class="project__box">
+          <h3 class="project__heading">Sparkr</h3><a href="https://make-sparks-fly.herokuapp.com">
             <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-              <source srcset="/assets/img/sparkr-1920.jpg 1920w, /assets/img/sparkr-1600.jpg 1600w /assets/img/sparkr-1280.jpg 1280w, /assets/img/sparkr-960.jpg 960w, /assets/img/sparkr-640.jpg 640w, /assets/img/sparkr-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/sparkr-1920.jpg" alt="Sparkr homepage">
+              <source srcset="/assets/img/sparkr-1920.jpg 1920w, /assets/img/sparkr-1600.jpg 1600w /assets/img/sparkr-1280.jpg 1280w, /assets/img/sparkr-960.jpg 960w, /assets/img/sparkr-640.jpg 640w, /assets/img/sparkr-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img class="project__image" src="/assets/img/sparkr-1920.jpg" alt="Sparkr homepage">
             </picture></a>
-          <p><span class="alt-font">Sparkr</span> was a group project. Together we designed and developed Sparkr. Sparkr is a dating service primarily for people over the age of 50. A user needs to like another user's three moments and vice versa for a match to occur. A users's three moments show aspects of their life. People can start chatting once a match has occurred.</p>
+          <p class="paragraph">Sparkr was a group project. Together we designed and developed Sparkr. Sparkr is a dating service primarily for people over the age of 50. A user needs to like another user's three moments and vice versa for a match to occur. A users's three moments show aspects of their life. People can start chatting once a match has occurred.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://make-sparks-fly.herokuapp.com" alt="">Visit Sparkr</a></li>
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/sparkr_app" alt="Sparkr GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>I was there</h3><a href="https://i-was-there-app.herokuapp.com/">
+        <section class="project__box">
+          <h3 class="project__heading">I was there</h3><a href="https://i-was-there-app.herokuapp.com">
             <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-              <source srcset="/assets/img/i-was-there-1920.jpg 1920w, /assets/img/i-was-there-1600.jpg 1600w /assets/img/i-was-there-1280.jpg 1280w, /assets/img/i-was-there-960.jpg 960w, /assets/img/i-was-there-640.jpg 640w, /assets/img/i-was-there-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/i-was-there-1920.jpg" alt="I was there homepage">
+              <source srcset="/assets/img/i-was-there-1920.jpg 1920w, /assets/img/i-was-there-1600.jpg 1600w /assets/img/i-was-there-1280.jpg 1280w, /assets/img/i-was-there-960.jpg 960w, /assets/img/i-was-there-640.jpg 640w, /assets/img/i-was-there-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img class="project__image" src="/assets/img/i-was-there-1920.jpg" alt="I was there homepage">
             </picture></a>
-          <p><span class="alt-font">I was there</span> was first rails app that I designed and built for the Web Development Immersive. I used Last.FM's API, to allow users to search for artists and events and to add or read reviews about the show.</p>
+          <p class="paragraph">I was there was my the first rails app that I designed and built for the Web Development Immersive. I used Last.FM's API, to allow users to search for artists and events and to add or read reviews about the show.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://i-was-there-app.herokuapp.com">Visit I was there</a></li>
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/i_was_there" alt="I was there GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>Ace Metalwork</h3><a href="http://www.acemetalwork.com/">
+        <section class="project__box">
+          <h3 class="project__heading">Ace Metalwork</h3><a href="http://www.acemetalwork.com">
             <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-              <source srcset="/assets/img/ace-metalwork-1920.jpg 1920w, /assets/img/ace-metalwork-1600.jpg 1600w /assets/img/ace-metalwork-1280.jpg 1280w, /assets/img/ace-metalwork-960.jpg 960w, /assets/img/ace-metalwork-640.jpg 640w, /assets/img/ace-metalwork-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/ace-metalwork-1920.jpg" alt="Ace Metalwork homepage">
+              <source srcset="/assets/img/ace-metalwork-1920.jpg 1920w, /assets/img/ace-metalwork-1600.jpg 1600w /assets/img/ace-metalwork-1280.jpg 1280w, /assets/img/ace-metalwork-960.jpg 960w, /assets/img/ace-metalwork-640.jpg 640w, /assets/img/ace-metalwork-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img class="project__image" src="/assets/img/ace-metalwork-1920.jpg" alt="Ace Metalwork homepage">
             </picture></a>
-          <p>After the Front End Web Development course, I gained my first client. I designed and developed a simple one page website to be used for a local Sydney business.</p>
+          <p class="paragraph">After the Front End Web Development course, I gained my first client. I designed and developed a simple one page website to be used for a local Sydney business.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="http://www.acemetalwork.com">Visit AceMetalwork</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>Ping Pong Tournament</h3><a href="https://julia-.github.io">
+        <section class="project__box">
+          <h3 class="project__heading">Ping Pong Tournament</h3><a href="https://julia-.github.io">
             <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-              <source srcset="/assets/img/ping-pong-1920.jpg 1920w, /assets/img/ping-pong-1600.jpg 1600w /assets/img/ping-pong-1280.jpg 1280w, /assets/img/ping-pong-960.jpg 960w, /assets/img/ping-pong-640.jpg 640w, /assets/img/ping-pong-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/ping-pong-1920.jpg" alt="Ping Pong Tournament homepage">
+              <source srcset="/assets/img/ping-pong-1920.jpg 1920w, /assets/img/ping-pong-1600.jpg 1600w /assets/img/ping-pong-1280.jpg 1280w, /assets/img/ping-pong-960.jpg 960w, /assets/img/ping-pong-640.jpg 640w, /assets/img/ping-pong-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img class="project__image" src="/assets/img/ping-pong-1920.jpg" alt="Ping Pong Tournament homepage">
             </picture></a>
-          <p>For my major assignment in the Front End Web Development course I designed and developed a website for a Ping Pong competition. I continued to refine the website after I completed the course. It was used by a local coworking company in Sydney.</p>
+          <p class="paragraph">For my major assignment in the Front End Web Development course I designed and developed a website for a Ping Pong competition. I continued to refine the website after I completed the course. It was used by a local coworking company in Sydney.</p>
+          <ul class="list">
+            <li class="list__item list__item--small"><a class="project__link" href="https://julia-.github.io">Visit Ping Pong Tournament</a></li>
+            <li class="list__item list__item--small"><a class="project__link" href="https://github.com/julia-/julia-.github.io" alt="Ping Pong Tournament GitHub Repo">View GitHub Repo</a></li>
+          </ul>
         </section>
-        <section class="box--project">
-          <h3>Band website</h3>
+        <section class="project__box">
+          <h3 class="project__heading">Band website</h3>
           <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source srcset="/assets/img/band-website-1920.jpg 1920w, /assets/img/band-website-1600.jpg 1600w /assets/img/band-website-1280.jpg 1280w, /assets/img/band-website-960.jpg 960w, /assets/img/band-website-640.jpg 640w, /assets/img/band-website-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img src="/assets/img/band-website-1920.jpg" alt="Band website homepage">
+            <source srcset="/assets/img/band-website-1920.jpg 1920w, /assets/img/band-website-1600.jpg 1600w /assets/img/band-website-1280.jpg 1280w, /assets/img/band-website-960.jpg 960w, /assets/img/band-website-640.jpg 640w, /assets/img/band-website-320.jpg 320w" sizes="(min-width: 37.5em) 80vw, (min-width: 64em) 33.3vw, 100vw"><!--[if IE 9]></video><![endif]--><img class="project__image" src="/assets/img/band-website-1920.jpg" alt="Band website homepage">
           </picture>
-          <p>I designed and developed a website for the band She &amp; Him for my first project for the Front End Web Development course at General Assembly.</p>
+          <p class="paragraph">I designed and developed a website for the band She &amp; Him for my first project for the Front End Web Development course at General Assembly.</p>
         </section>
       </section>
       <section class="section" id="experience">
@@ -177,28 +207,28 @@
       </section>
       <section class="section" id="contact">
         <h2 class="section__heading">Contact</h2>
-        <form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form">
+        <form class="form" name="contact" netlify-honeypot="bot-field" action="thank-you" netlify id="contact-form">
           <div class="hidden">
-            <label for="bot-field">Don’t fill out</label>
+            <label class="form__label" for="bot-field">Don’t fill out</label>
             <input name="bot-field">
           </div>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Name" required>
-          <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
-          <button type="submit">Send</button>
+          <label class="form__label" for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label class="form__label" for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__textarea" name="message" id="message" required></textarea>
+          <button class="form__button" type="submit">Send</button>
         </form>
         <div class="footer__menu">
           <h2 class="section__heading">Connect</h2>
-          <ul class="list--type-none">
+          <ul class="list--style-none">
             <li class="list__item list__item--large"><a href="https://github.com/julia-">GitHub</a></li>
             <li class="list__item list__item--large"><a href="https://www.linkedin.com/in/juliaryan/">LinkedIn</a></li>
             <li class="list__item list__item--large"><a href="https://twitter.com/juliax___">Twitter</a></li>
           </ul>
         </div>
-        <div class="author-container">
+        <div class="footer__author">
           <p>Made with <span class="heart"></span> by Julia Ryan</p>
         </div>
       </section>
