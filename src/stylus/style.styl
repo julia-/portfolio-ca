@@ -60,7 +60,7 @@ body
       bottom 0.4em
       transform rotate(-45deg)
   &.menu--active .menu--open
-      display none
+    display none
 
 .menu--open
   color primaryColor
@@ -86,7 +86,7 @@ body
   display block
   height 100vh
   left 0
-  padding 5em 3em 0 3em
+  padding 6em 3.8em 3em 3.8em
   position absolute
   overflow-y auto
   overflow-x auto
@@ -104,23 +104,25 @@ body
   grid-template-columns auto 1fr
   grid-template-rows 2fr 2fr 1fr
   height 100vh
-  padding 6em 3em 0 3em
+  min-height 0 /* new */
+  min-width 0 /* new; needed for FF */
+  padding 6em 3.8em 3em 3.8em
   width 100vw
 
 .header__heading
   align-self center
   font-size 5em
+  grid-column 1 / -1
   justify-self start
   margin .4em
-  grid-column 1 / -1
 
 .header__tagline
   align-self start
   font-size 2.4em
   grid-column 1 / 2
   grid-row 3 / 4
-  margin .6em
   justify-self center
+  margin .9em
 
 .header__text--vertical
   align-self start
@@ -137,19 +139,9 @@ body
   background primaryColor
   border 2.6em solid secondaryColor
   color secondaryColor
-  width 100vw
   min-height 100vh
-  padding 5em 3em 0 3em
-
-// .footer
-//   background secondaryColor
-//   border 3em solid primaryColor
-//   color primaryColor
-//   display grid
-//   grid-template-row 1fr 1fr 1fr
-//   width 100vw
-//   min-height 100vh
-//   padding 5em 3em 0 3em
+  padding 6em 3.8em 3em 3.8em
+  width 100vw
 
 .nav__heading
     margin-top 1.8em
@@ -162,17 +154,17 @@ body
     padding-bottom 1em
 
 .nav__items > a
-li > a
   display block
   text-decoration none
 
 li > a
   color secondaryColor
+  text-decoration none
 
 .hidden
   display none
 
-.grid--image
+.grid--projects
   display grid
   grid-gap 10px
   grid-template-columns repeat(auto-fit, minmax(180px, 1fr))
@@ -181,33 +173,30 @@ li > a
 .grid__heading
   grid-column 1 / -1
 
-.paragraph
-  font-size 1.4em
-  line-height 1.25em
-  padding-bottom 0.4em
-
 .list
   list-style square inside
   margin-left 1em
   padding 1em 0
 
-.list--type-none
-    list-style none
-    margin 0
-    padding 0
+.list--style-none
+  list-style none
+  margin 0
+  padding 0
 
 .data-list__description
 .list__item
   font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  line-height 1.25em
+  font-size 2em
   font-weight 300
-  font-size 1.4em
-  &--large
+  line-height 1.5em
+  &--small
     font-size 1.6em
+  &--large
+    font-size 2.2em
 
 .data-list__term
   font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1.6em
+  font-size 1.8em
   padding-top 1em
 
 .data-list
@@ -223,168 +212,184 @@ li > a
   padding 0.5em 0
   position relative
   &:before
-    content ''
     border-bottom 0.2em solid secondaryColor
-    position absolute
-    left 0
+    content ''
     bottom 0
     height 1px
+    left 0
+    position absolute
     width 10%
 
 .section__heading--sub
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
   font-size 2em
   margin 1em 0 0.5em 0
   padding 0.5em 0
+  position relative
   &:before
-    content ''
     border-bottom 0.2em solid secondaryColor
-    position absolute
-    left 0
+    content ''
     bottom 0
     height 1px
+    left 0
+    position absolute
     width 10%
+
+.project__heading
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 2em
+  margin 0.5em 0 0.5em 0
+  padding 0.5em 0
+  position relative
+  &:before
+    border-bottom 0.2em solid secondaryColor
+    bottom 0
+    content ''
+    height 1px
+    left 0
+    position absolute
+    width 10%
+
+.paragraph
+  font-size 2em
+  font-weight 300
+  line-height 1.5em
+  padding-bottom 0.4em
 
 .paragraph__intro
   font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1.2em
-  line-height 1.25em
+  font-size 1.8em
+  line-height 1.5em
   margin 1em 0
   padding 0
 
-// .image-grid
-//   display flex
-//   flex-direction column
-//   justify-content space-between
-//   margin-top 1.563em
-
-img
-  // max-width 100%
-  // height auto
-  border 0.25em solid secondaryColor
+.project__image
+  border 0.6em solid secondaryColor
+  height auto
   margin 0.25em 0
+  max-width 100%
 
-.project-link
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  color secondaryColor
-  text-decoration none
+.footer__menu
+  padding 6em 0 2em 0
+
+.project__link
   &:hover
     background secondaryColor
     color primaryColor
+
 // button
 .button
-  display block
   background primaryColor
   border 0.25em solid secondaryColor
-  width 12em
+  color secondaryColor
+  display block
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 1.15em
   height 2.5em
   margin 2.5em auto 0 auto
   padding-top 1em
   padding-bottom 2em
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1.15em
-  color secondaryColor
   text-align center
   text-decoration none
+  width 12em
   &:hover
     background secondaryColor
     color primaryColor
 
-.contact-container
-  padding-bottom 0
-  min-height 95vh
-
-form
-  position relative
-  margin 2em auto 0 auto
+.form
   font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  margin 2em auto 0 auto
+  position relative
 
 input[type="text"]
 input[type="email"]
+  appearance none
   background transparent
   border none
-  border-bottom 0.35em solid secondaryColor
-  min-width 100%
-  margin-bottom 26px
-  padding-bottom 4px
-  outline none
+  border-bottom .4em solid secondaryColor
   border-radius 0
-  appearance none
   font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
   font-weight 300
-  font-size 1em
-
-input::placeholder
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1em
-  color secondaryColor
+  font-size 1.6em
+  margin-bottom 2.4em
+  min-width 100%
+  padding-bottom 0.2em
+  outline none
+  &:active
+  &:focus
+    box-shadow unset
 
 input:-webkit-autofill
   -webkit-box-shadow 0 0 0 30px primaryColor inset
   -webkit-text-fill-color secondaryColor !important
 
-textarea
-  background primaryColor
-  border 0.25em solid secondaryColor
-  min-width 100%
-  height 10em
-  font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-weight 300
-  font-size 1em
-  border-radius 0
+.form__label
+  font-size 1.8em
+
+.form__textarea
   appearance none
+  background primaryColor
+  border 0.3em solid secondaryColor
+  border-radius 0
+  font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 1.6em
+  font-weight 300
+  height 10em
+  margin 0.6em 0
+  min-width 100%
   &:focus
     outline none
 
-button[type="submit"]
-  position absolute
-  bottom -3.25em
-  right 0
-  background primaryColor
-  border 0.2em solid secondaryColor
-  width 6em
-  height 2em
-  padding-top 0.75em
-  padding-bottom 1.75em
-  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
-  font-size 1.15em
-  cursor pointer
-  margin 0 auto
-  border-radius 0
+.form__button
   appearance none
+  background primaryColor
+  border 0.3em solid secondaryColor
+  border-radius 0
+  bottom -6em
+  cursor pointer
+  font-family 'Big John', Helvetica, 'Helvetica Neue', Arial, sans-serif
+  font-size 1.8em
+  height 2em
+  margin 2em auto
+  padding 1em 0 1.8em 0
+  position absolute
+  right 0
+  width 6em
   &:hover
     background secondaryColor
     color primaryColor
   &:focus
     outline none
 
-.author-container
+.footer__author
+  font-weight 300
   margin 1.563em auto 0.5em auto
   text-align center
 
 .heart
-  display inline-block
-  position relative
-  background primaryColor
-  top 0
-  width 1em
-  height 1em
-  transform rotate(45deg)
-  margin 0 1em
   animation heartbeat 1.2s ease infinite
+  background secondaryColor
+  display inline-block
+  height .8em
+  margin 0 .8em
+  position relative
+  top 0
+  transform rotate(45deg)
+  width .8em
   &::before
   &::after
-    content ''
-    background primaryColor
-    width 1em
-    height 1em
-    position absolute
+    background secondaryColor
     border-radius 50%
+    content ''
+    position absolute
+    height .8em
+    width .8em
   &::before
-    top -5px
     left 0
+    top -3px
   &::after
+    left -3px
     top 0
-    left -5px
 
 @keyframes heartbeat
   0%
@@ -414,203 +419,150 @@ button[type="submit"]
 //       right -1em
 
 // Medium Devices
-// @media (min-width: 768px)
-//   header
-//     border 1.563em solid primaryColor
-//     padding-top 3.75em
-//     padding-left 4.250em
-//     padding-right 4.250em
-//   .heading-container h1
-//     margin-top 1.563em
-//     font-size 4em
-//   .heading-container p:nth-child(2)
-//     font-size 4em
-//     padding-top 1em
-//     padding-bottom 0
-//   .heading-container p:nth-child(3)
-//     font-size 2.5em
-//     padding-top 0
-//     margin-top 2.5em
-//   .menu
-//     top 2.75em
-//     right 1.25em
-//     height 1em
-//     padding-right 3.25em
-//     font-size 1.75em
-//   .menu::before
-//   .menu::after
-//     width 1.25em
-//     height .3em
-//     right 1.25em
-//   .menu.menu--active::before
-//     top .35em
-//   .menu.menu--active::after
-//     bottom .35em
-//   .open
-//   .close
-//     right 3em
-//   .vertical-text
-//     right -1.15em
-//     bottom -2.25em
-//     font-size 1.25em
-//   .fa-long-arrow-down
-//     right -0.5em
-//     bottom -2.15em
-//   main
-//     border 1.563em solid secondaryColor
-//   .main-container > section
-//     border-bottom 1.563em solid secondaryColor
-//     padding-top 3.75em
-//     padding-left 4.250em
-//     padding-right 4.250em
-//   h2
-//     font-size 4em
-//   .main-container p
-//   li
-//   dt
-//   dd
-//     font-size 1.5em
-//   .image-grid
-//     display flex
-//     flex-direction row
-//     flex-wrap wrap
-//     justify-content space-between
-//     margin-top 1.563em
-//   .image-grid > img
-//     max-width 49%
-//     border 0.5em solid secondaryColor
-//   img:nth-child(odd)
-//     margin-right 0.25em
+@media (min-width: 768px)
+  .menu
+    font-size 3em
+  .nav--active
+    border 3.6em solid secondaryColor
+    padding 6em 6.8em 3em 6.8em
+  .nav__heading
+  .section__heading
+    font-size 6em
+  .nav__items > a
+    font-size 3em
+  .header
+    border 3.6em solid primaryColor
+    padding 6em 6.8em 3em 6.8em
+  .header__heading
+    align-self start
+    font-size 7em
+    margin .8em .8em 0 .8em
+  .header__tagline
+    font-size 3.8em
+    margin 0 1.6em
+  .header__text--vertical
+    font-size 1.8em
+    padding 0
+  .project__heading
+  .section__heading--sub
+    font-size 4em
+  .section
+    border 3.6em solid secondaryColor
+    padding 6em 6.8em 3em 6.8em
+  .grid--projects
+    grid-gap 6em
+  .paragraph
+    font-size 2.6em
+  .paragraph__intro
+    font-size 2.4em
+  .data-list__term
+    font-size 2.4em
+  .data-list__description
+  .list__item
+    font-size 2.6em
+  .button
+    border .3em solid secondaryColor
+    font-size 2.4em
+  .form
+    margin 4em auto 0 auto
+  .form__button
+  .form__label
+    font-size 2.4em
+  .form__textarea
+    border .5em solid secondaryColor
+  input[type="text"]
+  input[type="email"]
+    border-bottom .5em solid secondaryColor
+  .footer__author
+    font-size 2.8em
+    font-weight 300
+  .heart
+    width .6em
+    height .6em
+    margin 0 .6em
+    &::before
+    &::after
+      width .6em
+      height .6em
+    &::before
+      top -5px
+      left 0
+    &::after
+      top 0
+      left -5px
 
 // Large Devices
-// @media (min-width: 1024px)
-//   header
-//     border 2.188em solid primaryColor
-//     padding 7.25em 8.375em
-//   .heading-container
-//     h1
-//     p:nth-child(2)
-//       font-size 4.5em
-//       padding-top 1.042em
-//     p:nth-child(3)
-//       font-size 3em
-//       margin-top 3.25em
-//   .vertical-text
-//     right -2em
-//     bottom -2.25em
-//     font-size 1.5em
-//   .fa-long-arrow-down
-//     right -1em
-//     bottom -2.5em
-//   .menu
-//     top 3.125em
-//     right 1.5em
-//     height 1em
-//     padding-right 3em
-//     font-size 2.25em
-//   h2
-//     font-size 4.250em
-//     &::before
-//       border-bottom 0.2em solid secondaryColor
-//   h3
-//     font-size 3.875em
-//     &::before
-//       border-bottom 0.2em solid secondaryColor
-//   main
-//     border 2.188em solid secondaryColor
-//   .main-container > section
-//     border-bottom 2.188em solid secondaryColor
-//     padding 7.25em 8.375em
-//   .main-container p
-//   li
-//   dt
-//   dd
-//     font-size 2em
-//     line-height 125%
-//   dl dt:first-child
-//   dt
-//     padding-top 1.5em
-//   dl dd:last-child
-//     padding-bottom 1.5em
-//   .button
-//     font-size 2.5em
+@media (min-width: 1024px)
+  .menu
+    font-size 4em
+  .nav--active
+    border 5em solid secondaryColor
+    padding 6em 6.8em 3em 6.8em
+  .nav__heading
+  .section__heading
+    font-size 8em
+  .nav__items > a
+    font-size 4.4em
+  .header
+    border 4.6em solid primaryColor
+    padding 6em 6.8em 3em 6.8em
+  .header__heading
+    align-self start
+    font-size 10em
+    margin .8em .8em 0 .8em
+  .header__tagline
+    font-size 3.8em
+    margin 0 1.6em
+  .header__text--vertical
+    font-size 1.8em
+    padding 0
+  .project__heading
+  .section__heading--sub
+    font-size 4em
+  .section
+    border 4.6em solid secondaryColor
+    padding 6em 6.8em 3em 6.8em
+  .grid--projects
+    grid-gap 7em
+  .paragraph
+    font-size 2.8em
+  .paragraph__intro
+    font-size 3em
+  .data-list__term
+    font-size 3em
+  .data-list__description
+  .list__item
+    font-size 2.8em
+  .button
+    border .3em solid secondaryColor
+    font-size 2.8em
+  .form
+    margin 4em auto 0 auto
+  .form__button
+  .form__label
+    font-size 2.4em
+  .form__textarea
+    border .5em solid secondaryColor
+  input[type="text"]
+  input[type="email"]
+    border-bottom .5em solid secondaryColor
+  .footer__author
+    font-size 2.8em
+    font-weight 300
+  .heart
+    width .6em
+    height .6em
+    margin 0 .6em
+    &::before
+    &::after
+      width .6em
+      height .6em
+    &::before
+      top -5px
+      left 0
+    &::after
+      top 0
+      left -5px
 
 // Extra Large Devices
 // @media (min-width: 1200px)
-//   header
-//   footer
-//     border 2em solid primaryColor
-//   header
-//     padding 0.5em 12em 1.5em
-//   footer
-//     padding 6em 12em 2em 12em
-//   .heading-container
-//     h1
-//       font-size 4em
-//       margin-top 1em
-//       padding-top 0.25em
-//     p:nth-child(2)
-//       font-size 4em
-//       padding-top 0.25em
-//     p:nth-child(3)
-//       font-size 3em
-//       margin-top 1.5em
-//   .menu
-//     top 2em
-//     right 1em
-//     font-size 1.75em
-//   .nav.nav--active
-//     border 2em solid secondaryColor
-//     padding 6em 12em 3em 12em
-//     overflow-y auto
-//     h2
-//       margin-top 0
-//     .nav__items
-//       margin-top 0
-//     .nav__items > a
-//       font-size 2em
-//       padding-bottom 1em
-//   .scroll-indicator .vertical-text
-//     right 7em
-//     bottom -2.5em
-//   main
-//     border 2em solid secondaryColor
-//   .main-container > section
-//     border-bottom 2em solid secondaryColor
-//     padding 6em 12em 3em 12em
-//   .contact-container
-//     min-height 92vh
-//   h2
-//     font-size 3.75em
-//   h3
-//     font-size 2em
-//     margin 0.5em auto 0.5em auto
-//     &::before
-//       width 5%
-//   .main-container p
-//   li
-//   dt
-//   dd
-//     font-size 1.25em
-//     line-height 135%
-//   .main-container p.intro-paragraph
-//     font-size 1.5em
-//   img
-//     max-width 100%
-//     border 0.75em solid secondaryColor
-//     margin-bottom 1em
-//   .button
-//     font-size 1.25em
-//     margin 2em auto
-//   dl dt:first-child
-//     padding-top 0
-//   dt
-//     padding-top 1em
-//   input::placeholder
-//     font-size 1.25em
-//   label[for="message"]
-//     font-size 1.25em
-//   textarea
-//     margin-top 0.25em
-//   footer p
-//     margin 0 auto
